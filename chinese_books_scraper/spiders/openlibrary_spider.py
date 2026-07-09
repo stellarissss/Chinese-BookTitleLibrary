@@ -5,7 +5,6 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import requests
 import random
 import time
-import json
 from config.config import OPENLIBRARY_SEARCH_URL, USER_AGENTS, REQUEST_DELAY_MIN, REQUEST_DELAY_MAX
 from config.logging import get_logger
 
@@ -26,20 +25,21 @@ class OpenLibrarySpider:
         delay = random.uniform(REQUEST_DELAY_MIN, REQUEST_DELAY_MAX)
         time.sleep(delay)
     
-    def search_books(self, keyword, page=1, limit=100):
+    def _search_by_language(self, language_code, page=1, limit=100):
+        """按语言代码搜索所有书籍"""
         try:
             headers = {
                 'User-Agent': self._get_random_user_agent()
             }
             
             params = {
-                'q': keyword,
+                'q': f'language:{language_code}',
                 'page': page,
                 'limit': limit,
-                'fields': 'title,authors'
+                'fields': 'title,author_name'
             }
             
-            response = self.session.get(OPENLIBRARY_SEARCH_URL, headers=headers, params=params, timeout=15)
+            response = self.session.get(OPENLIBRARY_SEARCH_URL, headers=headers, params=params, timeout=30)
             
             if response.status_code == 200:
                 data = response.json()
@@ -48,22 +48,13 @@ class OpenLibrarySpider:
                 for doc in data.get('docs', []):
                     title = doc.get('title', '')
                     
-                    authors = []
-                    author_keys = doc.get('author_key', [])
-                    if author_keys:
-                        for i, key in enumerate(author_keys):
-                            author_name = doc.get(f'author_name_{i}', '')
-                            if not author_name:
-                                author_name = doc.get('author_name', [])
-                                if isinstance(author_name, list) and i < len(author_name):
-                                    author_name = author_name[i]
-                                elif isinstance(author_name, str):
-                                    author_name = author_name
-                                else:
-                                    continue
-                            authors.append(author_name)
-                    
-                    author_str = ', '.join(authors) if authors else ''
+                    authors = doc.get('author_name', [])
+                    if isinstance(authors, list):
+                        author_str = ', '.join(authors)
+                    elif isinstance(authors, str):
+                        author_str = authors
+                    else:
+                        author_str = ''
                     
                     if title and author_str:
                         books.append({
@@ -73,7 +64,7 @@ class OpenLibrarySpider:
                         })
                 
                 num_found = data.get('num_found', 0)
-                logger.info(f"Open Library搜索 '{keyword}' 第{page}页，获取 {len(books)} 本书，总计 {num_found} 本")
+                logger.info(f"Open Library language:{language_code} 第{page}页，获取 {len(books)} 本书，总计 {num_found} 本")
                 return books, num_found
             else:
                 logger.warning(f"Open Library请求失败，状态码: {response.status_code}")
@@ -83,14 +74,15 @@ class OpenLibrarySpider:
             logger.error(f"Open Library爬虫异常: {str(e)}")
             return [], 0
     
-    def crawl_keyword(self, keyword, max_results=1000):
+    def crawl_by_language(self, language_code, on_batch=None):
+        """按语言代码遍历所有分页，获取该语言的所有书籍"""
         all_books = []
         page = 1
         limit = 100
-        total = max_results
+        total = float('inf')
         
         while len(all_books) < total:
-            books, current_total = self.search_books(keyword, page, limit)
+            books, current_total = self._search_by_language(language_code, page, limit)
             
             if not books:
                 break
@@ -98,33 +90,48 @@ class OpenLibrarySpider:
             all_books.extend(books)
             
             if page == 1:
-                total = min(current_total, max_results)
+                total = current_total
+                logger.info(f"Open Library language:{language_code} 共有 {total} 本书")
+            
+            if on_batch:
+                on_batch(books, f'openlibrary-{language_code}-page{page}')
             
             page += 1
             
-            if len(all_books) < total:
-                self._add_random_delay()
+            if len(all_books) >= total:
+                break
+            
+            self._add_random_delay()
         
-        all_books = all_books[:max_results]
-        logger.info(f"Open Library关键词 '{keyword}' 爬取完成，共获取 {len(all_books)} 本书")
+        logger.info(f"Open Library language:{language_code} 爬取完成，共获取 {len(all_books)} 本书")
         return all_books
     
-    def crawl(self, keywords=None, max_results=1000):
-        if keywords is None:
-            keywords = ['Chinese literature', 'Chinese novel', 'Chinese history', 'Chinese philosophy']
-        
+    def crawl_all(self, on_batch=None):
+        """全量爬取：用 chi 和 zho 两种语言代码搜索所有中文书籍"""
         all_books = []
+        seen_keys = set()
         
-        for keyword in keywords:
-            books = self.crawl_keyword(keyword, max_results // len(keywords))
-            all_books.extend(books)
+        # 语言代码 chi = 中文（ISO 639-2 bibliographic），zho = 中文（ISO 639-2 terminological）
+        for lang_code in ['chi', 'zho']:
+            logger.info(f"开始爬取Open Library language:{lang_code}")
+            books = self.crawl_by_language(lang_code, on_batch=on_batch)
+            
+            new_books = []
+            for book in books:
+                key = (book['title'].lower().strip(), book['author'].lower().strip())
+                if key not in seen_keys:
+                    seen_keys.add(key)
+                    new_books.append(book)
+            
+            all_books.extend(new_books)
+            logger.info(f"Open Library language:{lang_code} 去重后新增 {len(new_books)} 本，累计 {len(all_books)} 本")
         
-        logger.info(f"Open Library爬虫完成，总计获取 {len(all_books)} 本书")
+        logger.info(f"Open Library全量爬取完成，共获取 {len(all_books)} 本书")
         return all_books
 
 if __name__ == '__main__':
     spider = OpenLibrarySpider()
-    books = spider.crawl_keyword('Chinese literature', 50)
+    books = spider.crawl_all()
     print(f"获取书籍数量: {len(books)}")
-    for book in books[:5]:
+    for book in books[:10]:
         print(f"书名: {book['title']}, 作者: {book['author']}")
