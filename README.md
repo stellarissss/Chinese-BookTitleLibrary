@@ -4,7 +4,7 @@
 
 > **当前状态：阶段三已完成。** 可运行的 Windows 离线单机版已构建并发布，
 > 源码见 [`混在日本PC单机版/PC工程/`](./混在日本PC单机版/PC工程/)，
-> 安装包见 [Releases](https://github.com/stellarissss/Chinese-BookTitleLibrary/releases)。
+> Windows 安装包见 [`混在日本PC单机版/安装包/`](./混在日本PC单机版/安装包/)。
 
 ---
 
@@ -15,6 +15,7 @@
 | [`调查报告/`](./调查报告/) | APK 深度调查文档（Markdown + HTML） | 阶段一产物：结构 / 外观 / 元素 / 玩法 / 后端全量还原 |
 | [`混在日本PC单机版/`](./混在日本PC单机版/) | 方案文档 + **PC 工程源码** | 阶段二 / 阶段三产物 |
 | [`混在日本PC单机版/PC工程/`](./混在日本PC单机版/PC工程/) | **可构建的完整工程** | Electron 外壳 + 离线适配层 + 全部游戏资源 |
+| [`混在日本PC单机版/安装包/`](./混在日本PC单机版/安装包/) | **Windows 安装包**（分卷） | 安装版 107.5 MB + 便携版 107.4 MB |
 | `hun.apk` | 原始 APK 样本 | 10,296,686 bytes，`com.hao.hun.japan` v4.0 |
 
 ---
@@ -61,7 +62,8 @@
 | `混在日本-4.0.0-x64.exe` | 安装版（推荐），107.6 MB |
 | `混在日本-便携版-4.0.0.exe` | 便携版（免安装），107.4 MB |
 
-下载：[Releases · hun-pc-v4.0.0](https://github.com/stellarissss/Chinese-BookTitleLibrary/releases/tag/hun-pc-v4.0.0)
+下载：[`混在日本PC单机版/安装包/`](./混在日本PC单机版/安装包/) —— 90 MB 上限所限以 24 MB 分卷存放，
+合并后即为原始 exe，方法与 SHA-256 校验见该目录 README。
 
 ### 技术栈
 
