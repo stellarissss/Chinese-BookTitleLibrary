@@ -1,3 +1,1416 @@
 2026-07-09 10:16:25,962 - crawl_all - INFO - [test] 写入数据库 3 条新记录
 2026-07-09 10:16:25,963 - crawl_all - INFO - [test2] 写入数据库 3 条新记录
 2026-07-09 10:16:45,488 - crawl_all - INFO - [test1] 写入数据库 2 条新记录
+2026-07-09 22:32:16,594 - __main__ - INFO - ================================================================================
+2026-07-09 22:32:16,594 - __main__ - INFO - 开始全量采集所有中文书籍数据
+2026-07-09 22:32:16,595 - __main__ - INFO - 启用爬虫: ['douban', 'dangdang', 'wikidata', 'openlibrary']
+2026-07-09 22:32:16,595 - __main__ - INFO - 数据库: D:\111Projects\Chinese-BookTitleLibrary\chinese_books_scraper\output\chinese_books.db
+2026-07-09 22:32:16,595 - __main__ - INFO - ================================================================================
+2026-07-09 22:32:16,595 - __main__ - INFO - 
+============================================================
+2026-07-09 22:32:16,595 - __main__ - INFO - 启动豆瓣读书全量爬虫（标签浏览模式）
+2026-07-09 22:32:16,595 - __main__ - INFO - ============================================================
+2026-07-09 22:32:16,895 - spiders.douban_spider - INFO - 获取到 0 个豆瓣标签
+2026-07-09 22:32:16,895 - spiders.douban_spider - WARNING - 未获取到标签列表，使用预设标签
+2026-07-09 22:32:16,895 - spiders.douban_spider - INFO - 正在处理标签 [1/65]: 小说
+2026-07-09 22:32:17,207 - spiders.douban_spider - INFO - 标签 '小说' 爬取完成，共获取 0 本书
+2026-07-09 22:32:17,209 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:19,271 - spiders.douban_spider - INFO - 正在处理标签 [2/65]: 文学
+2026-07-09 22:32:19,609 - spiders.douban_spider - INFO - 标签 '文学' 爬取完成，共获取 0 本书
+2026-07-09 22:32:19,610 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:20,725 - spiders.douban_spider - INFO - 正在处理标签 [3/65]: 中国文学
+2026-07-09 22:32:21,088 - spiders.douban_spider - INFO - 标签 '中国文学' 爬取完成，共获取 0 本书
+2026-07-09 22:32:21,088 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:23,654 - spiders.douban_spider - INFO - 正在处理标签 [4/65]: 外国文学
+2026-07-09 22:32:23,932 - spiders.douban_spider - INFO - 标签 '外国文学' 爬取完成，共获取 0 本书
+2026-07-09 22:32:23,933 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:25,573 - spiders.douban_spider - INFO - 正在处理标签 [5/65]: 经典
+2026-07-09 22:32:26,080 - spiders.douban_spider - INFO - 标签 '经典' 爬取完成，共获取 0 本书
+2026-07-09 22:32:26,080 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:27,647 - spiders.douban_spider - INFO - 正在处理标签 [6/65]: 散文
+2026-07-09 22:32:28,004 - spiders.douban_spider - INFO - 标签 '散文' 爬取完成，共获取 0 本书
+2026-07-09 22:32:28,006 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:29,748 - spiders.douban_spider - INFO - 正在处理标签 [7/65]: 随笔
+2026-07-09 22:32:29,999 - spiders.douban_spider - INFO - 标签 '随笔' 爬取完成，共获取 0 本书
+2026-07-09 22:32:30,000 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:31,405 - spiders.douban_spider - INFO - 正在处理标签 [8/65]: 诗歌
+2026-07-09 22:32:31,797 - spiders.douban_spider - INFO - 标签 '诗歌' 爬取完成，共获取 0 本书
+2026-07-09 22:32:31,798 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:33,111 - spiders.douban_spider - INFO - 正在处理标签 [9/65]: 古典文学
+2026-07-09 22:32:35,637 - spiders.douban_spider - INFO - 标签 '古典文学' 爬取完成，共获取 0 本书
+2026-07-09 22:32:35,637 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:36,899 - spiders.douban_spider - INFO - 正在处理标签 [10/65]: 当代文学
+2026-07-09 22:32:37,217 - spiders.douban_spider - INFO - 标签 '当代文学' 爬取完成，共获取 0 本书
+2026-07-09 22:32:37,218 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:39,274 - spiders.douban_spider - INFO - 正在处理标签 [11/65]: 名著
+2026-07-09 22:32:39,686 - spiders.douban_spider - INFO - 标签 '名著' 爬取完成，共获取 0 本书
+2026-07-09 22:32:39,687 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:41,413 - spiders.douban_spider - INFO - 正在处理标签 [12/65]: 杂文
+2026-07-09 22:32:42,575 - spiders.douban_spider - INFO - 标签 '杂文' 爬取完成，共获取 0 本书
+2026-07-09 22:32:42,576 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:44,555 - spiders.douban_spider - INFO - 正在处理标签 [13/65]: 诗词
+2026-07-09 22:32:45,335 - spiders.douban_spider - INFO - 标签 '诗词' 爬取完成，共获取 0 本书
+2026-07-09 22:32:45,336 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:46,357 - spiders.douban_spider - INFO - 正在处理标签 [14/65]: 童话
+2026-07-09 22:32:46,841 - spiders.douban_spider - INFO - 标签 '童话' 爬取完成，共获取 0 本书
+2026-07-09 22:32:46,842 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:48,309 - spiders.douban_spider - INFO - 正在处理标签 [15/65]: 儿童文学
+2026-07-09 22:32:48,922 - spiders.douban_spider - INFO - 标签 '儿童文学' 爬取完成，共获取 0 本书
+2026-07-09 22:32:48,923 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:50,909 - spiders.douban_spider - INFO - 正在处理标签 [16/65]: 历史
+2026-07-09 22:32:51,160 - spiders.douban_spider - INFO - 标签 '历史' 爬取完成，共获取 0 本书
+2026-07-09 22:32:51,162 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:32:53,684 - spiders.douban_spider - INFO - 正在处理标签 [17/65]: 中国历史
+2026-07-09 22:33:03,585 - spiders.douban_spider - INFO - 标签 '中国历史' 爬取完成，共获取 0 本书
+2026-07-09 22:33:03,586 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:05,932 - spiders.douban_spider - INFO - 正在处理标签 [18/65]: 哲学
+2026-07-09 22:33:06,386 - spiders.douban_spider - INFO - 标签 '哲学' 爬取完成，共获取 0 本书
+2026-07-09 22:33:06,387 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:07,490 - spiders.douban_spider - INFO - 正在处理标签 [19/65]: 心理学
+2026-07-09 22:33:07,558 - spiders.douban_spider - INFO - 标签 '心理学' 爬取完成，共获取 0 本书
+2026-07-09 22:33:07,561 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:10,259 - spiders.douban_spider - INFO - 正在处理标签 [20/65]: 社会学
+2026-07-09 22:33:10,333 - spiders.douban_spider - INFO - 标签 '社会学' 爬取完成，共获取 0 本书
+2026-07-09 22:33:10,333 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:11,519 - spiders.douban_spider - INFO - 正在处理标签 [21/65]: 文化
+2026-07-09 22:33:11,641 - spiders.douban_spider - INFO - 标签 '文化' 爬取完成，共获取 0 本书
+2026-07-09 22:33:11,641 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:13,528 - spiders.douban_spider - INFO - 正在处理标签 [22/65]: 艺术
+2026-07-09 22:33:13,659 - spiders.douban_spider - INFO - 标签 '艺术' 爬取完成，共获取 0 本书
+2026-07-09 22:33:13,660 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:15,534 - spiders.douban_spider - INFO - 正在处理标签 [23/65]: 政治
+2026-07-09 22:33:15,595 - spiders.douban_spider - INFO - 标签 '政治' 爬取完成，共获取 0 本书
+2026-07-09 22:33:15,596 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:18,402 - spiders.douban_spider - INFO - 正在处理标签 [24/65]: 传记
+2026-07-09 22:33:18,466 - spiders.douban_spider - INFO - 标签 '传记' 爬取完成，共获取 0 本书
+2026-07-09 22:33:18,467 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:21,114 - spiders.douban_spider - INFO - 正在处理标签 [25/65]: 国学
+2026-07-09 22:33:21,211 - spiders.douban_spider - INFO - 标签 '国学' 爬取完成，共获取 0 本书
+2026-07-09 22:33:21,213 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:24,105 - spiders.douban_spider - INFO - 正在处理标签 [26/65]: 军事
+2026-07-09 22:33:24,171 - spiders.douban_spider - INFO - 标签 '军事' 爬取完成，共获取 0 本书
+2026-07-09 22:33:24,171 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:25,866 - spiders.douban_spider - INFO - 正在处理标签 [27/65]: 佛教
+2026-07-09 22:33:25,923 - spiders.douban_spider - INFO - 标签 '佛教' 爬取完成，共获取 0 本书
+2026-07-09 22:33:25,924 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:27,195 - spiders.douban_spider - INFO - 正在处理标签 [28/65]: 宗教
+2026-07-09 22:33:27,361 - spiders.douban_spider - INFO - 标签 '宗教' 爬取完成，共获取 0 本书
+2026-07-09 22:33:27,362 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:29,193 - spiders.douban_spider - INFO - 正在处理标签 [29/65]: 考古
+2026-07-09 22:33:29,349 - spiders.douban_spider - INFO - 标签 '考古' 爬取完成，共获取 0 本书
+2026-07-09 22:33:29,350 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:32,195 - spiders.douban_spider - INFO - 正在处理标签 [30/65]: 近代史
+2026-07-09 22:33:32,373 - spiders.douban_spider - INFO - 标签 '近代史' 爬取完成，共获取 0 本书
+2026-07-09 22:33:32,374 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:33,952 - spiders.douban_spider - INFO - 正在处理标签 [31/65]: 武侠
+2026-07-09 22:33:34,160 - spiders.douban_spider - INFO - 标签 '武侠' 爬取完成，共获取 0 本书
+2026-07-09 22:33:34,161 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:35,626 - spiders.douban_spider - INFO - 正在处理标签 [32/65]: 科幻
+2026-07-09 22:33:35,741 - spiders.douban_spider - INFO - 标签 '科幻' 爬取完成，共获取 0 本书
+2026-07-09 22:33:35,743 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:38,023 - spiders.douban_spider - INFO - 正在处理标签 [33/65]: 推理
+2026-07-09 22:33:38,147 - spiders.douban_spider - INFO - 标签 '推理' 爬取完成，共获取 0 本书
+2026-07-09 22:33:38,148 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:39,426 - spiders.douban_spider - INFO - 正在处理标签 [34/65]: 悬疑
+2026-07-09 22:33:39,501 - spiders.douban_spider - INFO - 标签 '悬疑' 爬取完成，共获取 0 本书
+2026-07-09 22:33:39,502 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:41,130 - spiders.douban_spider - INFO - 正在处理标签 [35/65]: 言情
+2026-07-09 22:33:41,199 - spiders.douban_spider - INFO - 标签 '言情' 爬取完成，共获取 0 本书
+2026-07-09 22:33:41,200 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:42,548 - spiders.douban_spider - INFO - 正在处理标签 [36/65]: 奇幻
+2026-07-09 22:33:42,640 - spiders.douban_spider - INFO - 标签 '奇幻' 爬取完成，共获取 0 本书
+2026-07-09 22:33:42,641 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:44,865 - spiders.douban_spider - INFO - 正在处理标签 [37/65]: 网络小说
+2026-07-09 22:33:44,960 - spiders.douban_spider - INFO - 标签 '网络小说' 爬取完成，共获取 0 本书
+2026-07-09 22:33:44,961 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:47,947 - spiders.douban_spider - INFO - 正在处理标签 [38/65]: 漫画
+2026-07-09 22:33:48,008 - spiders.douban_spider - INFO - 标签 '漫画' 爬取完成，共获取 0 本书
+2026-07-09 22:33:48,009 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:50,061 - spiders.douban_spider - INFO - 正在处理标签 [39/65]: 绘本
+2026-07-09 22:33:50,149 - spiders.douban_spider - INFO - 标签 '绘本' 爬取完成，共获取 0 本书
+2026-07-09 22:33:50,149 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:52,777 - spiders.douban_spider - INFO - 正在处理标签 [40/65]: 青春
+2026-07-09 22:33:52,988 - spiders.douban_spider - INFO - 标签 '青春' 爬取完成，共获取 0 本书
+2026-07-09 22:33:52,989 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:55,475 - spiders.douban_spider - INFO - 正在处理标签 [41/65]: 经济
+2026-07-09 22:33:55,651 - spiders.douban_spider - INFO - 标签 '经济' 爬取完成，共获取 0 本书
+2026-07-09 22:33:55,656 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:33:58,643 - spiders.douban_spider - INFO - 正在处理标签 [42/65]: 管理
+2026-07-09 22:33:58,700 - spiders.douban_spider - INFO - 标签 '管理' 爬取完成，共获取 0 本书
+2026-07-09 22:33:58,701 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:00,857 - spiders.douban_spider - INFO - 正在处理标签 [43/65]: 商业
+2026-07-09 22:34:00,918 - spiders.douban_spider - INFO - 标签 '商业' 爬取完成，共获取 0 本书
+2026-07-09 22:34:00,918 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:03,207 - spiders.douban_spider - INFO - 正在处理标签 [44/65]: 金融
+2026-07-09 22:34:03,462 - spiders.douban_spider - INFO - 标签 '金融' 爬取完成，共获取 0 本书
+2026-07-09 22:34:03,462 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:04,605 - spiders.douban_spider - INFO - 正在处理标签 [45/65]: 投资
+2026-07-09 22:34:04,697 - spiders.douban_spider - INFO - 标签 '投资' 爬取完成，共获取 0 本书
+2026-07-09 22:34:04,697 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:07,175 - spiders.douban_spider - INFO - 正在处理标签 [46/65]: 科普
+2026-07-09 22:34:07,244 - spiders.douban_spider - INFO - 标签 '科普' 爬取完成，共获取 0 本书
+2026-07-09 22:34:07,245 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:08,677 - spiders.douban_spider - INFO - 正在处理标签 [47/65]: 科学
+2026-07-09 22:34:08,744 - spiders.douban_spider - INFO - 标签 '科学' 爬取完成，共获取 0 本书
+2026-07-09 22:34:08,745 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:10,491 - spiders.douban_spider - INFO - 正在处理标签 [48/65]: 编程
+2026-07-09 22:34:10,600 - spiders.douban_spider - INFO - 标签 '编程' 爬取完成，共获取 0 本书
+2026-07-09 22:34:10,601 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:13,295 - spiders.douban_spider - INFO - 正在处理标签 [49/65]: 互联网
+2026-07-09 22:34:13,361 - spiders.douban_spider - INFO - 标签 '互联网' 爬取完成，共获取 0 本书
+2026-07-09 22:34:13,362 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:15,159 - spiders.douban_spider - INFO - 正在处理标签 [50/65]: 算法
+2026-07-09 22:34:15,216 - spiders.douban_spider - INFO - 标签 '算法' 爬取完成，共获取 0 本书
+2026-07-09 22:34:15,217 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:16,888 - spiders.douban_spider - INFO - 正在处理标签 [51/65]: 科技
+2026-07-09 22:34:17,052 - spiders.douban_spider - INFO - 标签 '科技' 爬取完成，共获取 0 本书
+2026-07-09 22:34:17,053 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:18,079 - spiders.douban_spider - INFO - 正在处理标签 [52/65]: 旅行
+2026-07-09 22:34:18,164 - spiders.douban_spider - INFO - 标签 '旅行' 爬取完成，共获取 0 本书
+2026-07-09 22:34:18,164 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:20,288 - spiders.douban_spider - INFO - 正在处理标签 [53/65]: 生活
+2026-07-09 22:34:20,433 - spiders.douban_spider - INFO - 标签 '生活' 爬取完成，共获取 0 本书
+2026-07-09 22:34:20,434 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:22,953 - spiders.douban_spider - INFO - 正在处理标签 [54/65]: 心理
+2026-07-09 22:34:23,036 - spiders.douban_spider - INFO - 标签 '心理' 爬取完成，共获取 0 本书
+2026-07-09 22:34:23,037 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:24,450 - spiders.douban_spider - INFO - 正在处理标签 [55/65]: 励志
+2026-07-09 22:34:24,608 - spiders.douban_spider - INFO - 标签 '励志' 爬取完成，共获取 0 本书
+2026-07-09 22:34:24,609 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:26,256 - spiders.douban_spider - INFO - 正在处理标签 [56/65]: 教育
+2026-07-09 22:34:26,552 - spiders.douban_spider - INFO - 标签 '教育' 爬取完成，共获取 0 本书
+2026-07-09 22:34:26,553 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:27,924 - spiders.douban_spider - INFO - 正在处理标签 [57/65]: 美食
+2026-07-09 22:34:28,267 - spiders.douban_spider - INFO - 标签 '美食' 爬取完成，共获取 0 本书
+2026-07-09 22:34:28,268 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:29,587 - spiders.douban_spider - INFO - 正在处理标签 [58/65]: 健康
+2026-07-09 22:34:29,770 - spiders.douban_spider - INFO - 标签 '健康' 爬取完成，共获取 0 本书
+2026-07-09 22:34:29,771 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:31,895 - spiders.douban_spider - INFO - 正在处理标签 [59/65]: 设计
+2026-07-09 22:34:31,956 - spiders.douban_spider - INFO - 标签 '设计' 爬取完成，共获取 0 本书
+2026-07-09 22:34:31,957 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:34,682 - spiders.douban_spider - INFO - 正在处理标签 [60/65]: 建筑
+2026-07-09 22:34:34,761 - spiders.douban_spider - INFO - 标签 '建筑' 爬取完成，共获取 0 本书
+2026-07-09 22:34:34,762 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:37,140 - spiders.douban_spider - INFO - 正在处理标签 [61/65]: 电影
+2026-07-09 22:34:37,327 - spiders.douban_spider - INFO - 标签 '电影' 爬取完成，共获取 0 本书
+2026-07-09 22:34:37,328 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:38,996 - spiders.douban_spider - INFO - 正在处理标签 [62/65]: 音乐
+2026-07-09 22:34:39,174 - spiders.douban_spider - INFO - 标签 '音乐' 爬取完成，共获取 0 本书
+2026-07-09 22:34:39,174 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:40,250 - spiders.douban_spider - INFO - 正在处理标签 [63/65]: 摄影
+2026-07-09 22:34:40,414 - spiders.douban_spider - INFO - 标签 '摄影' 爬取完成，共获取 0 本书
+2026-07-09 22:34:40,415 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:42,052 - spiders.douban_spider - INFO - 正在处理标签 [64/65]: 绘画
+2026-07-09 22:34:42,190 - spiders.douban_spider - INFO - 标签 '绘画' 爬取完成，共获取 0 本书
+2026-07-09 22:34:42,190 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:43,564 - spiders.douban_spider - INFO - 正在处理标签 [65/65]: 戏剧
+2026-07-09 22:34:43,787 - spiders.douban_spider - INFO - 标签 '戏剧' 爬取完成，共获取 0 本书
+2026-07-09 22:34:43,788 - __main__ - INFO - 数据库当前总记录数: 0
+2026-07-09 22:34:43,788 - spiders.douban_spider - INFO - 豆瓣读书全量爬取完成，共获取 0 本书
+2026-07-09 22:34:43,789 - __main__ - INFO - 
+============================================================
+2026-07-09 22:34:43,789 - __main__ - INFO - 启动当当网全量爬虫（分类浏览模式）
+2026-07-09 22:34:43,789 - __main__ - INFO - ============================================================
+2026-07-09 22:34:45,925 - spiders.dangdang_spider - INFO - 获取到 688 个当当网分类
+2026-07-09 22:34:45,926 - spiders.dangdang_spider - INFO - 正在处理分类 [1/688]: 亲签书
+2026-07-09 22:34:46,676 - spiders.dangdang_spider - INFO - 分类 '亲签书' 第1页，获取 60 本书，累计 60 本
+2026-07-09 22:34:50,114 - spiders.dangdang_spider - INFO - 分类 '亲签书' 爬取完成，共获取 60 本书
+2026-07-09 22:34:50,131 - __main__ - INFO - [亲签书] 写入数据库 60 条新记录
+2026-07-09 22:34:50,134 - __main__ - INFO - 数据库当前总记录数: 60
+2026-07-09 22:34:51,774 - spiders.dangdang_spider - INFO - 正在处理分类 [2/688]: 课程
+2026-07-09 22:34:52,121 - spiders.dangdang_spider - INFO - 分类 '课程' 第1页，获取 31 本书，累计 31 本
+2026-07-09 22:34:55,343 - spiders.dangdang_spider - INFO - 分类 '课程' 爬取完成，共获取 31 本书
+2026-07-09 22:34:55,354 - __main__ - INFO - [课程] 写入数据库 31 条新记录
+2026-07-09 22:34:55,355 - __main__ - INFO - 数据库当前总记录数: 91
+2026-07-09 22:34:57,517 - spiders.dangdang_spider - INFO - 正在处理分类 [3/688]: 进口原版
+2026-07-09 22:34:58,007 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第1页，获取 52 本书，累计 52 本
+2026-07-09 22:34:59,695 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第2页，获取 58 本书，累计 110 本
+2026-07-09 22:35:02,636 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第3页，获取 59 本书，累计 169 本
+2026-07-09 22:35:04,573 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第4页，获取 60 本书，累计 229 本
+2026-07-09 22:35:06,407 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第5页，获取 60 本书，累计 289 本
+2026-07-09 22:35:09,353 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第6页，获取 60 本书，累计 349 本
+2026-07-09 22:35:11,715 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第7页，获取 59 本书，累计 408 本
+2026-07-09 22:35:14,440 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第8页，获取 60 本书，累计 468 本
+2026-07-09 22:35:17,418 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第9页，获取 60 本书，累计 528 本
+2026-07-09 22:35:19,444 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第10页，获取 60 本书，累计 588 本
+2026-07-09 22:35:22,353 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第11页，获取 57 本书，累计 645 本
+2026-07-09 22:35:24,164 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第12页，获取 60 本书，累计 705 本
+2026-07-09 22:35:26,654 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第13页，获取 60 本书，累计 765 本
+2026-07-09 22:35:30,105 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第14页，获取 60 本书，累计 825 本
+2026-07-09 22:35:33,555 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第15页，获取 60 本书，累计 885 本
+2026-07-09 22:35:36,806 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第16页，获取 60 本书，累计 945 本
+2026-07-09 22:35:38,801 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第17页，获取 60 本书，累计 1005 本
+2026-07-09 22:35:41,900 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第18页，获取 60 本书，累计 1065 本
+2026-07-09 22:35:45,222 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第19页，获取 60 本书，累计 1125 本
+2026-07-09 22:35:47,096 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第20页，获取 60 本书，累计 1185 本
+2026-07-09 22:35:49,733 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第21页，获取 60 本书，累计 1245 本
+2026-07-09 22:35:51,407 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第22页，获取 60 本书，累计 1305 本
+2026-07-09 22:35:53,040 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第23页，获取 60 本书，累计 1365 本
+2026-07-09 22:35:56,460 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第24页，获取 60 本书，累计 1425 本
+2026-07-09 22:35:59,253 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第25页，获取 60 本书，累计 1485 本
+2026-07-09 22:36:01,791 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第26页，获取 60 本书，累计 1545 本
+2026-07-09 22:36:03,449 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第27页，获取 60 本书，累计 1605 本
+2026-07-09 22:36:06,198 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第28页，获取 60 本书，累计 1665 本
+2026-07-09 22:36:07,663 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第29页，获取 60 本书，累计 1725 本
+2026-07-09 22:36:11,044 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第30页，获取 60 本书，累计 1785 本
+2026-07-09 22:36:12,979 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第31页，获取 60 本书，累计 1845 本
+2026-07-09 22:36:15,388 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第32页，获取 60 本书，累计 1905 本
+2026-07-09 22:36:18,328 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第33页，获取 60 本书，累计 1965 本
+2026-07-09 22:36:21,011 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第34页，获取 60 本书，累计 2025 本
+2026-07-09 22:36:22,600 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第35页，获取 60 本书，累计 2085 本
+2026-07-09 22:36:24,704 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第36页，获取 60 本书，累计 2145 本
+2026-07-09 22:36:27,949 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第37页，获取 60 本书，累计 2205 本
+2026-07-09 22:36:31,134 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第38页，获取 60 本书，累计 2265 本
+2026-07-09 22:36:33,492 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第39页，获取 60 本书，累计 2325 本
+2026-07-09 22:36:36,225 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第40页，获取 60 本书，累计 2385 本
+2026-07-09 22:36:37,801 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第41页，获取 60 本书，累计 2445 本
+2026-07-09 22:36:41,233 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第42页，获取 60 本书，累计 2505 本
+2026-07-09 22:36:43,914 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第43页，获取 60 本书，累计 2565 本
+2026-07-09 22:36:46,641 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第44页，获取 60 本书，累计 2625 本
+2026-07-09 22:36:48,302 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第45页，获取 60 本书，累计 2685 本
+2026-07-09 22:36:50,394 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第46页，获取 60 本书，累计 2745 本
+2026-07-09 22:36:53,978 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第47页，获取 60 本书，累计 2805 本
+2026-07-09 22:36:55,456 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第48页，获取 60 本书，累计 2865 本
+2026-07-09 22:36:57,783 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第49页，获取 60 本书，累计 2925 本
+2026-07-09 22:37:00,671 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第50页，获取 60 本书，累计 2985 本
+2026-07-09 22:37:02,865 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第51页，获取 60 本书，累计 3045 本
+2026-07-09 22:37:05,457 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第52页，获取 60 本书，累计 3105 本
+2026-07-09 22:37:07,023 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第53页，获取 60 本书，累计 3165 本
+2026-07-09 22:37:09,498 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第54页，获取 60 本书，累计 3225 本
+2026-07-09 22:37:12,669 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第55页，获取 60 本书，累计 3285 本
+2026-07-09 22:37:14,937 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第56页，获取 60 本书，累计 3345 本
+2026-07-09 22:37:16,696 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第57页，获取 60 本书，累计 3405 本
+2026-07-09 22:37:19,505 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第58页，获取 60 本书，累计 3465 本
+2026-07-09 22:37:22,721 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第59页，获取 60 本书，累计 3525 本
+2026-07-09 22:37:25,203 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第60页，获取 60 本书，累计 3585 本
+2026-07-09 22:37:27,638 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第61页，获取 60 本书，累计 3645 本
+2026-07-09 22:37:29,277 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第62页，获取 60 本书，累计 3705 本
+2026-07-09 22:37:31,903 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第63页，获取 60 本书，累计 3765 本
+2026-07-09 22:37:34,475 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第64页，获取 60 本书，累计 3825 本
+2026-07-09 22:37:37,166 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第65页，获取 60 本书，累计 3885 本
+2026-07-09 22:37:38,835 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第66页，获取 60 本书，累计 3945 本
+2026-07-09 22:37:42,268 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第67页，获取 60 本书，累计 4005 本
+2026-07-09 22:37:45,015 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第68页，获取 60 本书，累计 4065 本
+2026-07-09 22:37:47,047 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第69页，获取 60 本书，累计 4125 本
+2026-07-09 22:37:48,874 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第70页，获取 60 本书，累计 4185 本
+2026-07-09 22:37:51,710 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第71页，获取 60 本书，累计 4245 本
+2026-07-09 22:37:53,841 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第72页，获取 60 本书，累计 4305 本
+2026-07-09 22:37:56,192 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第73页，获取 60 本书，累计 4365 本
+2026-07-09 22:37:58,000 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第74页，获取 60 本书，累计 4425 本
+2026-07-09 22:37:59,925 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第75页，获取 60 本书，累计 4485 本
+2026-07-09 22:38:02,867 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第76页，获取 60 本书，累计 4545 本
+2026-07-09 22:38:05,184 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第77页，获取 60 本书，累计 4605 本
+2026-07-09 22:38:06,629 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第78页，获取 60 本书，累计 4665 本
+2026-07-09 22:38:08,601 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第79页，获取 60 本书，累计 4725 本
+2026-07-09 22:38:11,254 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第80页，获取 60 本书，累计 4785 本
+2026-07-09 22:38:14,425 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第81页，获取 60 本书，累计 4845 本
+2026-07-09 22:38:16,769 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第82页，获取 60 本书，累计 4905 本
+2026-07-09 22:38:19,667 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第83页，获取 60 本书，累计 4965 本
+2026-07-09 22:38:21,663 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第84页，获取 60 本书，累计 5025 本
+2026-07-09 22:38:23,030 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第85页，获取 60 本书，累计 5085 本
+2026-07-09 22:38:26,115 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第86页，获取 60 本书，累计 5145 本
+2026-07-09 22:38:29,114 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第87页，获取 60 本书，累计 5205 本
+2026-07-09 22:38:30,773 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第88页，获取 60 本书，累计 5265 本
+2026-07-09 22:38:34,122 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第89页，获取 60 本书，累计 5325 本
+2026-07-09 22:38:36,843 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第90页，获取 60 本书，累计 5385 本
+2026-07-09 22:38:39,038 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第91页，获取 60 本书，累计 5445 本
+2026-07-09 22:38:40,831 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第92页，获取 60 本书，累计 5505 本
+2026-07-09 22:38:43,954 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第93页，获取 60 本书，累计 5565 本
+2026-07-09 22:38:46,668 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第94页，获取 60 本书，累计 5625 本
+2026-07-09 22:38:49,595 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第95页，获取 60 本书，累计 5685 本
+2026-07-09 22:38:52,656 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第96页，获取 60 本书，累计 5745 本
+2026-07-09 22:38:55,787 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第97页，获取 60 本书，累计 5805 本
+2026-07-09 22:38:59,017 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第98页，获取 60 本书，累计 5865 本
+2026-07-09 22:39:01,650 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第99页，获取 60 本书，累计 5925 本
+2026-07-09 22:39:05,038 - spiders.dangdang_spider - INFO - 分类 '进口原版' 第100页，获取 60 本书，累计 5985 本
+2026-07-09 22:39:07,863 - spiders.dangdang_spider - INFO - 分类 '进口原版' 爬取完成，共获取 5985 本书
+2026-07-09 22:39:08,051 - __main__ - INFO - [进口原版] 写入数据库 5950 条新记录
+2026-07-09 22:39:08,053 - __main__ - INFO - 数据库当前总记录数: 6041
+2026-07-09 22:39:10,138 - spiders.dangdang_spider - INFO - 正在处理分类 [4/688]: 特价
+2026-07-09 22:39:10,775 - spiders.dangdang_spider - INFO - 分类 '特价' 第1页，获取 60 本书，累计 60 本
+2026-07-09 22:39:12,370 - spiders.dangdang_spider - INFO - 分类 '特价' 第2页，获取 60 本书，累计 120 本
+2026-07-09 22:39:15,995 - spiders.dangdang_spider - INFO - 分类 '特价' 第3页，获取 60 本书，累计 180 本
+2026-07-09 22:39:17,646 - spiders.dangdang_spider - INFO - 分类 '特价' 第4页，获取 60 本书，累计 240 本
+2026-07-09 22:39:20,019 - spiders.dangdang_spider - INFO - 分类 '特价' 第5页，获取 60 本书，累计 300 本
+2026-07-09 22:39:22,104 - spiders.dangdang_spider - INFO - 分类 '特价' 第6页，获取 60 本书，累计 360 本
+2026-07-09 22:39:24,151 - spiders.dangdang_spider - INFO - 分类 '特价' 第7页，获取 60 本书，累计 420 本
+2026-07-09 22:39:26,165 - spiders.dangdang_spider - INFO - 分类 '特价' 第8页，获取 60 本书，累计 480 本
+2026-07-09 22:39:27,928 - spiders.dangdang_spider - INFO - 分类 '特价' 第9页，获取 14 本书，累计 494 本
+2026-07-09 22:39:27,929 - spiders.dangdang_spider - INFO - 分类 '特价' 爬取完成，共获取 494 本书
+2026-07-09 22:39:27,955 - __main__ - INFO - [特价] 写入数据库 494 条新记录
+2026-07-09 22:39:27,959 - __main__ - INFO - 数据库当前总记录数: 6535
+2026-07-09 22:39:30,375 - spiders.dangdang_spider - INFO - 正在处理分类 [5/688]: 考试
+2026-07-09 22:39:30,981 - spiders.dangdang_spider - INFO - 分类 '考试' 第1页，获取 50 本书，累计 50 本
+2026-07-09 22:39:33,812 - spiders.dangdang_spider - INFO - 分类 '考试' 第2页，获取 57 本书，累计 107 本
+2026-07-09 22:39:37,188 - spiders.dangdang_spider - INFO - 分类 '考试' 第3页，获取 58 本书，累计 165 本
+2026-07-09 22:39:39,496 - spiders.dangdang_spider - INFO - 分类 '考试' 第4页，获取 59 本书，累计 224 本
+2026-07-09 22:39:41,522 - spiders.dangdang_spider - INFO - 分类 '考试' 第5页，获取 52 本书，累计 276 本
+2026-07-09 22:39:43,902 - spiders.dangdang_spider - INFO - 分类 '考试' 第6页，获取 55 本书，累计 331 本
+2026-07-09 22:39:45,934 - spiders.dangdang_spider - INFO - 分类 '考试' 第7页，获取 58 本书，累计 389 本
+2026-07-09 22:39:48,053 - spiders.dangdang_spider - INFO - 分类 '考试' 第8页，获取 57 本书，累计 446 本
+2026-07-09 22:39:51,528 - spiders.dangdang_spider - INFO - 分类 '考试' 第9页，获取 59 本书，累计 505 本
+2026-07-09 22:39:54,581 - spiders.dangdang_spider - INFO - 分类 '考试' 第10页，获取 56 本书，累计 561 本
+2026-07-09 22:39:58,355 - spiders.dangdang_spider - INFO - 分类 '考试' 第11页，获取 55 本书，累计 616 本
+2026-07-09 22:40:02,019 - spiders.dangdang_spider - INFO - 分类 '考试' 第12页，获取 57 本书，累计 673 本
+2026-07-09 22:40:04,476 - spiders.dangdang_spider - INFO - 分类 '考试' 第13页，获取 56 本书，累计 729 本
+2026-07-09 22:40:07,606 - spiders.dangdang_spider - INFO - 分类 '考试' 第14页，获取 59 本书，累计 788 本
+2026-07-09 22:40:10,498 - spiders.dangdang_spider - INFO - 分类 '考试' 第15页，获取 60 本书，累计 848 本
+2026-07-09 22:40:13,578 - spiders.dangdang_spider - INFO - 分类 '考试' 第16页，获取 59 本书，累计 907 本
+2026-07-09 22:40:16,327 - spiders.dangdang_spider - INFO - 分类 '考试' 第17页，获取 58 本书，累计 965 本
+2026-07-09 22:40:18,596 - spiders.dangdang_spider - INFO - 分类 '考试' 第18页，获取 56 本书，累计 1021 本
+2026-07-09 22:40:21,162 - spiders.dangdang_spider - INFO - 分类 '考试' 第19页，获取 56 本书，累计 1077 本
+2026-07-09 22:40:24,546 - spiders.dangdang_spider - INFO - 分类 '考试' 第20页，获取 60 本书，累计 1137 本
+2026-07-09 22:40:27,215 - spiders.dangdang_spider - INFO - 分类 '考试' 第21页，获取 59 本书，累计 1196 本
+2026-07-09 22:40:29,889 - spiders.dangdang_spider - INFO - 分类 '考试' 第22页，获取 60 本书，累计 1256 本
+2026-07-09 22:40:31,724 - spiders.dangdang_spider - INFO - 分类 '考试' 第23页，获取 58 本书，累计 1314 本
+2026-07-09 22:40:34,966 - spiders.dangdang_spider - INFO - 分类 '考试' 第24页，获取 56 本书，累计 1370 本
+2026-07-09 22:40:38,327 - spiders.dangdang_spider - INFO - 分类 '考试' 第25页，获取 60 本书，累计 1430 本
+2026-07-09 22:40:40,113 - spiders.dangdang_spider - INFO - 分类 '考试' 第26页，获取 60 本书，累计 1490 本
+2026-07-09 22:40:43,278 - spiders.dangdang_spider - INFO - 分类 '考试' 第27页，获取 60 本书，累计 1550 本
+2026-07-09 22:40:46,556 - spiders.dangdang_spider - INFO - 分类 '考试' 第28页，获取 60 本书，累计 1610 本
+2026-07-09 22:40:50,028 - spiders.dangdang_spider - INFO - 分类 '考试' 第29页，获取 60 本书，累计 1670 本
+2026-07-09 22:40:52,841 - spiders.dangdang_spider - INFO - 分类 '考试' 第30页，获取 59 本书，累计 1729 本
+2026-07-09 22:40:55,115 - spiders.dangdang_spider - INFO - 分类 '考试' 第31页，获取 59 本书，累计 1788 本
+2026-07-09 22:40:57,283 - spiders.dangdang_spider - INFO - 分类 '考试' 第32页，获取 60 本书，累计 1848 本
+2026-07-09 22:40:59,500 - spiders.dangdang_spider - INFO - 分类 '考试' 第33页，获取 60 本书，累计 1908 本
+2026-07-09 22:41:01,922 - spiders.dangdang_spider - INFO - 分类 '考试' 第34页，获取 59 本书，累计 1967 本
+2026-07-09 22:41:04,084 - spiders.dangdang_spider - INFO - 分类 '考试' 第35页，获取 59 本书，累计 2026 本
+2026-07-09 22:41:06,647 - spiders.dangdang_spider - INFO - 分类 '考试' 第36页，获取 59 本书，累计 2085 本
+2026-07-09 22:41:09,672 - spiders.dangdang_spider - INFO - 分类 '考试' 第37页，获取 59 本书，累计 2144 本
+2026-07-09 22:41:11,562 - spiders.dangdang_spider - INFO - 分类 '考试' 第38页，获取 58 本书，累计 2202 本
+2026-07-09 22:41:15,226 - spiders.dangdang_spider - INFO - 分类 '考试' 第39页，获取 60 本书，累计 2262 本
+2026-07-09 22:41:18,634 - spiders.dangdang_spider - INFO - 分类 '考试' 第40页，获取 60 本书，累计 2322 本
+2026-07-09 22:41:20,463 - spiders.dangdang_spider - INFO - 分类 '考试' 第41页，获取 57 本书，累计 2379 本
+2026-07-09 22:41:23,931 - spiders.dangdang_spider - INFO - 分类 '考试' 第42页，获取 60 本书，累计 2439 本
+2026-07-09 22:41:25,643 - spiders.dangdang_spider - INFO - 分类 '考试' 第43页，获取 60 本书，累计 2499 本
+2026-07-09 22:41:27,746 - spiders.dangdang_spider - INFO - 分类 '考试' 第44页，获取 60 本书，累计 2559 本
+2026-07-09 22:41:29,422 - spiders.dangdang_spider - INFO - 分类 '考试' 第45页，获取 59 本书，累计 2618 本
+2026-07-09 22:41:31,071 - spiders.dangdang_spider - INFO - 分类 '考试' 第46页，获取 60 本书，累计 2678 本
+2026-07-09 22:41:33,559 - spiders.dangdang_spider - INFO - 分类 '考试' 第47页，获取 60 本书，累计 2738 本
+2026-07-09 22:41:36,032 - spiders.dangdang_spider - INFO - 分类 '考试' 第48页，获取 60 本书，累计 2798 本
+2026-07-09 22:41:38,739 - spiders.dangdang_spider - INFO - 分类 '考试' 第49页，获取 60 本书，累计 2858 本
+2026-07-09 22:41:41,577 - spiders.dangdang_spider - INFO - 分类 '考试' 第50页，获取 60 本书，累计 2918 本
+2026-07-09 22:41:44,761 - spiders.dangdang_spider - INFO - 分类 '考试' 第51页，获取 60 本书，累计 2978 本
+2026-07-09 22:41:46,312 - spiders.dangdang_spider - INFO - 分类 '考试' 第52页，获取 60 本书，累计 3038 本
+2026-07-09 22:41:48,069 - spiders.dangdang_spider - INFO - 分类 '考试' 第53页，获取 59 本书，累计 3097 本
+2026-07-09 22:41:50,432 - spiders.dangdang_spider - INFO - 分类 '考试' 第54页，获取 58 本书，累计 3155 本
+2026-07-09 22:41:53,593 - spiders.dangdang_spider - INFO - 分类 '考试' 第55页，获取 59 本书，累计 3214 本
+2026-07-09 22:41:57,098 - spiders.dangdang_spider - INFO - 分类 '考试' 第56页，获取 60 本书，累计 3274 本
+2026-07-09 22:41:59,356 - spiders.dangdang_spider - INFO - 分类 '考试' 第57页，获取 60 本书，累计 3334 本
+2026-07-09 22:42:02,172 - spiders.dangdang_spider - INFO - 分类 '考试' 第58页，获取 60 本书，累计 3394 本
+2026-07-09 22:42:04,383 - spiders.dangdang_spider - INFO - 分类 '考试' 第59页，获取 59 本书，累计 3453 本
+2026-07-09 22:42:07,451 - spiders.dangdang_spider - INFO - 分类 '考试' 第60页，获取 59 本书，累计 3512 本
+2026-07-09 22:42:10,959 - spiders.dangdang_spider - INFO - 分类 '考试' 第61页，获取 60 本书，累计 3572 本
+2026-07-09 22:42:13,480 - spiders.dangdang_spider - INFO - 分类 '考试' 第62页，获取 60 本书，累计 3632 本
+2026-07-09 22:42:15,267 - spiders.dangdang_spider - INFO - 分类 '考试' 第63页，获取 60 本书，累计 3692 本
+2026-07-09 22:42:18,071 - spiders.dangdang_spider - INFO - 分类 '考试' 第64页，获取 59 本书，累计 3751 本
+2026-07-09 22:42:20,461 - spiders.dangdang_spider - INFO - 分类 '考试' 第65页，获取 59 本书，累计 3810 本
+2026-07-09 22:42:23,206 - spiders.dangdang_spider - INFO - 分类 '考试' 第66页，获取 59 本书，累计 3869 本
+2026-07-09 22:42:26,402 - spiders.dangdang_spider - INFO - 分类 '考试' 第67页，获取 60 本书，累计 3929 本
+2026-07-09 22:42:29,344 - spiders.dangdang_spider - INFO - 分类 '考试' 第68页，获取 60 本书，累计 3989 本
+2026-07-09 22:42:32,423 - spiders.dangdang_spider - INFO - 分类 '考试' 第69页，获取 60 本书，累计 4049 本
+2026-07-09 22:42:34,065 - spiders.dangdang_spider - INFO - 分类 '考试' 第70页，获取 59 本书，累计 4108 本
+2026-07-09 22:42:36,003 - spiders.dangdang_spider - INFO - 分类 '考试' 第71页，获取 60 本书，累计 4168 本
+2026-07-09 22:42:39,678 - spiders.dangdang_spider - INFO - 分类 '考试' 第72页，获取 60 本书，累计 4228 本
+2026-07-09 22:42:41,510 - spiders.dangdang_spider - INFO - 分类 '考试' 第73页，获取 60 本书，累计 4288 本
+2026-07-09 22:42:44,118 - spiders.dangdang_spider - INFO - 分类 '考试' 第74页，获取 58 本书，累计 4346 本
+2026-07-09 22:42:47,008 - spiders.dangdang_spider - INFO - 分类 '考试' 第75页，获取 60 本书，累计 4406 本
+2026-07-09 22:42:49,530 - spiders.dangdang_spider - INFO - 分类 '考试' 第76页，获取 60 本书，累计 4466 本
+2026-07-09 22:42:52,408 - spiders.dangdang_spider - INFO - 分类 '考试' 第77页，获取 60 本书，累计 4526 本
+2026-07-09 22:42:55,756 - spiders.dangdang_spider - INFO - 分类 '考试' 第78页，获取 59 本书，累计 4585 本
+2026-07-09 22:42:58,728 - spiders.dangdang_spider - INFO - 分类 '考试' 第79页，获取 59 本书，累计 4644 本
+2026-07-09 22:43:02,053 - spiders.dangdang_spider - INFO - 分类 '考试' 第80页，获取 58 本书，累计 4702 本
+2026-07-09 22:43:05,223 - spiders.dangdang_spider - INFO - 分类 '考试' 第81页，获取 60 本书，累计 4762 本
+2026-07-09 22:43:08,020 - spiders.dangdang_spider - INFO - 分类 '考试' 第82页，获取 60 本书，累计 4822 本
+2026-07-09 22:43:10,465 - spiders.dangdang_spider - INFO - 分类 '考试' 第83页，获取 60 本书，累计 4882 本
+2026-07-09 22:43:13,202 - spiders.dangdang_spider - INFO - 分类 '考试' 第84页，获取 59 本书，累计 4941 本
+2026-07-09 22:43:15,240 - spiders.dangdang_spider - INFO - 分类 '考试' 第85页，获取 60 本书，累计 5001 本
+2026-07-09 22:43:18,329 - spiders.dangdang_spider - INFO - 分类 '考试' 第86页，获取 60 本书，累计 5061 本
+2026-07-09 22:43:20,669 - spiders.dangdang_spider - INFO - 分类 '考试' 第87页，获取 60 本书，累计 5121 本
+2026-07-09 22:43:23,422 - spiders.dangdang_spider - INFO - 分类 '考试' 第88页，获取 60 本书，累计 5181 本
+2026-07-09 22:43:25,816 - spiders.dangdang_spider - INFO - 分类 '考试' 第89页，获取 58 本书，累计 5239 本
+2026-07-09 22:43:27,791 - spiders.dangdang_spider - INFO - 分类 '考试' 第90页，获取 60 本书，累计 5299 本
+2026-07-09 22:43:30,809 - spiders.dangdang_spider - INFO - 分类 '考试' 第91页，获取 59 本书，累计 5358 本
+2026-07-09 22:43:33,833 - spiders.dangdang_spider - INFO - 分类 '考试' 第92页，获取 60 本书，累计 5418 本
+2026-07-09 22:43:35,346 - spiders.dangdang_spider - INFO - 分类 '考试' 第93页，获取 60 本书，累计 5478 本
+2026-07-09 22:43:38,703 - spiders.dangdang_spider - INFO - 分类 '考试' 第94页，获取 58 本书，累计 5536 本
+2026-07-09 22:43:41,650 - spiders.dangdang_spider - INFO - 分类 '考试' 第95页，获取 60 本书，累计 5596 本
+2026-07-09 22:43:43,852 - spiders.dangdang_spider - INFO - 分类 '考试' 第96页，获取 60 本书，累计 5656 本
+2026-07-09 22:43:47,252 - spiders.dangdang_spider - INFO - 分类 '考试' 第97页，获取 59 本书，累计 5715 本
+2026-07-09 22:43:49,472 - spiders.dangdang_spider - INFO - 分类 '考试' 第98页，获取 59 本书，累计 5774 本
+2026-07-09 22:43:51,547 - spiders.dangdang_spider - INFO - 分类 '考试' 第99页，获取 57 本书，累计 5831 本
+2026-07-09 22:43:54,362 - spiders.dangdang_spider - INFO - 分类 '考试' 第100页，获取 59 本书，累计 5890 本
+2026-07-09 22:43:55,618 - spiders.dangdang_spider - INFO - 分类 '考试' 爬取完成，共获取 5890 本书
+2026-07-09 22:43:55,781 - __main__ - INFO - [考试] 写入数据库 5824 条新记录
+2026-07-09 22:43:55,786 - __main__ - INFO - 数据库当前总记录数: 12359
+2026-07-09 22:43:58,760 - spiders.dangdang_spider - INFO - 正在处理分类 [6/688]: 课程
+2026-07-09 22:43:59,547 - spiders.dangdang_spider - INFO - 分类 '课程' 第1页，获取 31 本书，累计 31 本
+2026-07-09 22:44:02,274 - spiders.dangdang_spider - INFO - 分类 '课程' 爬取完成，共获取 31 本书
+2026-07-09 22:44:02,288 - __main__ - INFO - [课程] 写入数据库 31 条新记录
+2026-07-09 22:44:02,291 - __main__ - INFO - 数据库当前总记录数: 12390
+2026-07-09 22:44:04,987 - spiders.dangdang_spider - INFO - 正在处理分类 [7/688]: 研究生/本科/专科教材
+2026-07-09 22:44:05,774 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第1页，获取 51 本书，累计 51 本
+2026-07-09 22:44:08,286 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第2页，获取 57 本书，累计 108 本
+2026-07-09 22:44:09,845 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第3页，获取 58 本书，累计 166 本
+2026-07-09 22:44:12,204 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第4页，获取 57 本书，累计 223 本
+2026-07-09 22:44:14,283 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第5页，获取 52 本书，累计 275 本
+2026-07-09 22:44:16,603 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第6页，获取 57 本书，累计 332 本
+2026-07-09 22:44:20,100 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第7页，获取 58 本书，累计 390 本
+2026-07-09 22:44:22,075 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第8页，获取 58 本书，累计 448 本
+2026-07-09 22:44:24,803 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第9页，获取 59 本书，累计 507 本
+2026-07-09 22:44:27,910 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第10页，获取 52 本书，累计 559 本
+2026-07-09 22:44:30,137 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第11页，获取 56 本书，累计 615 本
+2026-07-09 22:44:33,763 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第12页，获取 58 本书，累计 673 本
+2026-07-09 22:44:35,348 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第13页，获取 59 本书，累计 732 本
+2026-07-09 22:44:38,828 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第14页，获取 59 本书，累计 791 本
+2026-07-09 22:44:40,565 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第15页，获取 59 本书，累计 850 本
+2026-07-09 22:44:43,504 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第16页，获取 55 本书，累计 905 本
+2026-07-09 22:44:46,970 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第17页，获取 56 本书，累计 961 本
+2026-07-09 22:44:50,094 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第18页，获取 60 本书，累计 1021 本
+2026-07-09 22:44:52,552 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第19页，获取 59 本书，累计 1080 本
+2026-07-09 22:44:55,250 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第20页，获取 58 本书，累计 1138 本
+2026-07-09 22:44:58,113 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第21页，获取 56 本书，累计 1194 本
+2026-07-09 22:45:01,499 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第22页，获取 60 本书，累计 1254 本
+2026-07-09 22:45:03,143 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第23页，获取 60 本书，累计 1314 本
+2026-07-09 22:45:06,255 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第24页，获取 60 本书，累计 1374 本
+2026-07-09 22:45:09,024 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第25页，获取 60 本书，累计 1434 本
+2026-07-09 22:45:12,538 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第26页，获取 60 本书，累计 1494 本
+2026-07-09 22:45:15,874 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第27页，获取 60 本书，累计 1554 本
+2026-07-09 22:45:17,678 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第28页，获取 60 本书，累计 1614 本
+2026-07-09 22:45:21,325 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第29页，获取 59 本书，累计 1673 本
+2026-07-09 22:45:23,469 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第30页，获取 59 本书，累计 1732 本
+2026-07-09 22:45:26,828 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第31页，获取 59 本书，累计 1791 本
+2026-07-09 22:45:30,306 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第32页，获取 58 本书，累计 1849 本
+2026-07-09 22:45:33,079 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第33页，获取 59 本书，累计 1908 本
+2026-07-09 22:45:35,828 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第34页，获取 60 本书，累计 1968 本
+2026-07-09 22:45:38,282 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第35页，获取 57 本书，累计 2025 本
+2026-07-09 22:45:40,273 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第36页，获取 60 本书，累计 2085 本
+2026-07-09 22:45:43,181 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第37页，获取 60 本书，累计 2145 本
+2026-07-09 22:45:45,314 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第38页，获取 59 本书，累计 2204 本
+2026-07-09 22:45:48,325 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第39页，获取 60 本书，累计 2264 本
+2026-07-09 22:45:50,199 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第40页，获取 60 本书，累计 2324 本
+2026-07-09 22:45:53,821 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第41页，获取 60 本书，累计 2384 本
+2026-07-09 22:45:56,923 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第42页，获取 60 本书，累计 2444 本
+2026-07-09 22:46:00,147 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第43页，获取 60 本书，累计 2504 本
+2026-07-09 22:46:03,241 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第44页，获取 60 本书，累计 2564 本
+2026-07-09 22:46:05,404 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第45页，获取 59 本书，累计 2623 本
+2026-07-09 22:46:09,225 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第46页，获取 58 本书，累计 2681 本
+2026-07-09 22:46:12,810 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第47页，获取 59 本书，累计 2740 本
+2026-07-09 22:46:14,854 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第48页，获取 60 本书，累计 2800 本
+2026-07-09 22:46:18,629 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第49页，获取 60 本书，累计 2860 本
+2026-07-09 22:46:21,302 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第50页，获取 59 本书，累计 2919 本
+2026-07-09 22:46:23,609 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第51页，获取 59 本书，累计 2978 本
+2026-07-09 22:46:25,708 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第52页，获取 60 本书，累计 3038 本
+2026-07-09 22:46:28,107 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第53页，获取 60 本书，累计 3098 本
+2026-07-09 22:46:30,910 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第54页，获取 59 本书，累计 3157 本
+2026-07-09 22:46:34,573 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第55页，获取 59 本书，累计 3216 本
+2026-07-09 22:46:37,973 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第56页，获取 59 本书，累计 3275 本
+2026-07-09 22:46:39,674 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第57页，获取 60 本书，累计 3335 本
+2026-07-09 22:46:42,358 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第58页，获取 60 本书，累计 3395 本
+2026-07-09 22:46:45,051 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第59页，获取 59 本书，累计 3454 本
+2026-07-09 22:46:46,982 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第60页，获取 60 本书，累计 3514 本
+2026-07-09 22:46:49,944 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第61页，获取 60 本书，累计 3574 本
+2026-07-09 22:46:53,202 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第62页，获取 59 本书，累计 3633 本
+2026-07-09 22:46:55,612 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第63页，获取 60 本书，累计 3693 本
+2026-07-09 22:46:58,780 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第64页，获取 60 本书，累计 3753 本
+2026-07-09 22:47:01,910 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第65页，获取 59 本书，累计 3812 本
+2026-07-09 22:47:03,937 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第66页，获取 59 本书，累计 3871 本
+2026-07-09 22:47:06,466 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第67页，获取 58 本书，累计 3929 本
+2026-07-09 22:47:08,085 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第68页，获取 60 本书，累计 3989 本
+2026-07-09 22:47:10,999 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第69页，获取 60 本书，累计 4049 本
+2026-07-09 22:47:13,974 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第70页，获取 59 本书，累计 4108 本
+2026-07-09 22:47:15,878 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第71页，获取 60 本书，累计 4168 本
+2026-07-09 22:47:18,567 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第72页，获取 60 本书，累计 4228 本
+2026-07-09 22:47:22,025 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第73页，获取 59 本书，累计 4287 本
+2026-07-09 22:47:24,233 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第74页，获取 59 本书，累计 4346 本
+2026-07-09 22:47:27,313 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第75页，获取 60 本书，累计 4406 本
+2026-07-09 22:47:29,956 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第76页，获取 60 本书，累计 4466 本
+2026-07-09 22:47:33,010 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第77页，获取 58 本书，累计 4524 本
+2026-07-09 22:47:36,380 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第78页，获取 60 本书，累计 4584 本
+2026-07-09 22:47:38,441 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第79页，获取 59 本书，累计 4643 本
+2026-07-09 22:47:42,112 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第80页，获取 59 本书，累计 4702 本
+2026-07-09 22:47:44,399 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第81页，获取 58 本书，累计 4760 本
+2026-07-09 22:47:46,411 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第82页，获取 59 本书，累计 4819 本
+2026-07-09 22:47:48,637 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第83页，获取 58 本书，累计 4877 本
+2026-07-09 22:47:51,991 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第84页，获取 58 本书，累计 4935 本
+2026-07-09 22:47:54,505 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第85页，获取 59 本书，累计 4994 本
+2026-07-09 22:47:56,839 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第86页，获取 59 本书，累计 5053 本
+2026-07-09 22:47:59,523 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第87页，获取 58 本书，累计 5111 本
+2026-07-09 22:48:02,142 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第88页，获取 56 本书，累计 5167 本
+2026-07-09 22:48:04,518 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第89页，获取 58 本书，累计 5225 本
+2026-07-09 22:48:06,823 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第90页，获取 58 本书，累计 5283 本
+2026-07-09 22:48:09,521 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第91页，获取 59 本书，累计 5342 本
+2026-07-09 22:48:13,273 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第92页，获取 58 本书，累计 5400 本
+2026-07-09 22:48:15,870 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第93页，获取 50 本书，累计 5450 本
+2026-07-09 22:48:18,271 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第94页，获取 56 本书，累计 5506 本
+2026-07-09 22:48:20,390 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第95页，获取 57 本书，累计 5563 本
+2026-07-09 22:48:22,442 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第96页，获取 57 本书，累计 5620 本
+2026-07-09 22:48:24,825 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第97页，获取 60 本书，累计 5680 本
+2026-07-09 22:48:27,795 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第98页，获取 57 本书，累计 5737 本
+2026-07-09 22:48:31,209 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第99页，获取 57 本书，累计 5794 本
+2026-07-09 22:48:34,585 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 第100页，获取 56 本书，累计 5850 本
+2026-07-09 22:48:36,747 - spiders.dangdang_spider - INFO - 分类 '研究生/本科/专科教材' 爬取完成，共获取 5850 本书
+2026-07-09 22:48:36,912 - __main__ - INFO - [研究生/本科/专科教材] 写入数据库 5764 条新记录
+2026-07-09 22:48:36,914 - __main__ - INFO - 数据库当前总记录数: 18154
+2026-07-09 22:48:38,636 - spiders.dangdang_spider - INFO - 正在处理分类 [8/688]: 高职高专教材
+2026-07-09 22:48:39,343 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第1页，获取 57 本书，累计 57 本
+2026-07-09 22:48:42,117 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第2页，获取 60 本书，累计 117 本
+2026-07-09 22:48:43,733 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第3页，获取 60 本书，累计 177 本
+2026-07-09 22:48:47,046 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第4页，获取 60 本书，累计 237 本
+2026-07-09 22:48:49,293 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第5页，获取 60 本书，累计 297 本
+2026-07-09 22:48:52,938 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第6页，获取 60 本书，累计 357 本
+2026-07-09 22:48:55,661 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第7页，获取 60 本书，累计 417 本
+2026-07-09 22:48:57,623 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第8页，获取 60 本书，累计 477 本
+2026-07-09 22:48:59,268 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第9页，获取 60 本书，累计 537 本
+2026-07-09 22:49:02,348 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第10页，获取 60 本书，累计 597 本
+2026-07-09 22:49:04,295 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第11页，获取 60 本书，累计 657 本
+2026-07-09 22:49:05,891 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第12页，获取 59 本书，累计 716 本
+2026-07-09 22:49:07,807 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第13页，获取 60 本书，累计 776 本
+2026-07-09 22:49:11,141 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第14页，获取 59 本书，累计 835 本
+2026-07-09 22:49:14,015 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第15页，获取 56 本书，累计 891 本
+2026-07-09 22:49:15,772 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第16页，获取 59 本书，累计 950 本
+2026-07-09 22:49:19,096 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第17页，获取 59 本书，累计 1009 本
+2026-07-09 22:49:21,928 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第18页，获取 58 本书，累计 1067 本
+2026-07-09 22:49:24,296 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第19页，获取 60 本书，累计 1127 本
+2026-07-09 22:49:27,043 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第20页，获取 60 本书，累计 1187 本
+2026-07-09 22:49:29,205 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第21页，获取 60 本书，累计 1247 本
+2026-07-09 22:49:31,137 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第22页，获取 60 本书，累计 1307 本
+2026-07-09 22:49:33,057 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第23页，获取 60 本书，累计 1367 本
+2026-07-09 22:49:34,999 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第24页，获取 60 本书，累计 1427 本
+2026-07-09 22:49:37,256 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第25页，获取 60 本书，累计 1487 本
+2026-07-09 22:49:40,493 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第26页，获取 60 本书，累计 1547 本
+2026-07-09 22:49:42,722 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第27页，获取 60 本书，累计 1607 本
+2026-07-09 22:49:44,732 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第28页，获取 60 本书，累计 1667 本
+2026-07-09 22:49:46,845 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第29页，获取 60 本书，累计 1727 本
+2026-07-09 22:49:49,752 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第30页，获取 60 本书，累计 1787 本
+2026-07-09 22:49:52,890 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第31页，获取 60 本书，累计 1847 本
+2026-07-09 22:49:58,460 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第32页，获取 60 本书，累计 1907 本
+2026-07-09 22:50:01,886 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第33页，获取 60 本书，累计 1967 本
+2026-07-09 22:50:04,910 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第34页，获取 60 本书，累计 2027 本
+2026-07-09 22:50:07,085 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第35页，获取 60 本书，累计 2087 本
+2026-07-09 22:50:09,093 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第36页，获取 60 本书，累计 2147 本
+2026-07-09 22:50:11,920 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第37页，获取 60 本书，累计 2207 本
+2026-07-09 22:50:14,344 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第38页，获取 60 本书，累计 2267 本
+2026-07-09 22:50:17,334 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第39页，获取 60 本书，累计 2327 本
+2026-07-09 22:50:20,050 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第40页，获取 60 本书，累计 2387 本
+2026-07-09 22:50:22,669 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第41页，获取 60 本书，累计 2447 本
+2026-07-09 22:50:25,137 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第42页，获取 60 本书，累计 2507 本
+2026-07-09 22:50:28,064 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第43页，获取 60 本书，累计 2567 本
+2026-07-09 22:50:31,071 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第44页，获取 60 本书，累计 2627 本
+2026-07-09 22:50:33,314 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第45页，获取 60 本书，累计 2687 本
+2026-07-09 22:50:36,511 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第46页，获取 60 本书，累计 2747 本
+2026-07-09 22:50:40,302 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第47页，获取 60 本书，累计 2807 本
+2026-07-09 22:50:43,768 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第48页，获取 60 本书，累计 2867 本
+2026-07-09 22:50:46,292 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第49页，获取 60 本书，累计 2927 本
+2026-07-09 22:50:48,041 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第50页，获取 60 本书，累计 2987 本
+2026-07-09 22:50:50,561 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第51页，获取 60 本书，累计 3047 本
+2026-07-09 22:50:53,168 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第52页，获取 60 本书，累计 3107 本
+2026-07-09 22:50:55,616 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第53页，获取 60 本书，累计 3167 本
+2026-07-09 22:50:58,283 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第54页，获取 60 本书，累计 3227 本
+2026-07-09 22:51:01,292 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第55页，获取 60 本书，累计 3287 本
+2026-07-09 22:51:04,665 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第56页，获取 60 本书，累计 3347 本
+2026-07-09 22:51:08,087 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第57页，获取 60 本书，累计 3407 本
+2026-07-09 22:51:11,938 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第58页，获取 60 本书，累计 3467 本
+2026-07-09 22:51:15,510 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第59页，获取 60 本书，累计 3527 本
+2026-07-09 22:51:18,830 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第60页，获取 60 本书，累计 3587 本
+2026-07-09 22:51:22,092 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第61页，获取 60 本书，累计 3647 本
+2026-07-09 22:51:24,900 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第62页，获取 60 本书，累计 3707 本
+2026-07-09 22:51:28,182 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第63页，获取 60 本书，累计 3767 本
+2026-07-09 22:51:31,703 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第64页，获取 60 本书，累计 3827 本
+2026-07-09 22:51:33,561 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第65页，获取 60 本书，累计 3887 本
+2026-07-09 22:51:35,561 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第66页，获取 60 本书，累计 3947 本
+2026-07-09 22:51:39,068 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第67页，获取 60 本书，累计 4007 本
+2026-07-09 22:51:42,872 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第68页，获取 60 本书，累计 4067 本
+2026-07-09 22:51:46,368 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第69页，获取 60 本书，累计 4127 本
+2026-07-09 22:51:49,116 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第70页，获取 60 本书，累计 4187 本
+2026-07-09 22:51:50,963 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第71页，获取 60 本书，累计 4247 本
+2026-07-09 22:51:53,364 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第72页，获取 60 本书，累计 4307 本
+2026-07-09 22:51:56,740 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第73页，获取 60 本书，累计 4367 本
+2026-07-09 22:51:59,513 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第74页，获取 60 本书，累计 4427 本
+2026-07-09 22:52:02,668 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第75页，获取 60 本书，累计 4487 本
+2026-07-09 22:52:05,860 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第76页，获取 60 本书，累计 4547 本
+2026-07-09 22:52:08,564 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第77页，获取 60 本书，累计 4607 本
+2026-07-09 22:52:11,651 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第78页，获取 60 本书，累计 4667 本
+2026-07-09 22:52:14,261 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第79页，获取 60 本书，累计 4727 本
+2026-07-09 22:52:17,248 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第80页，获取 60 本书，累计 4787 本
+2026-07-09 22:52:19,769 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第81页，获取 60 本书，累计 4847 本
+2026-07-09 22:52:23,540 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第82页，获取 60 本书，累计 4907 本
+2026-07-09 22:52:26,825 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第83页，获取 60 本书，累计 4967 本
+2026-07-09 22:52:28,968 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第84页，获取 60 本书，累计 5027 本
+2026-07-09 22:52:32,294 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第85页，获取 60 本书，累计 5087 本
+2026-07-09 22:52:35,512 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第86页，获取 60 本书，累计 5147 本
+2026-07-09 22:52:39,150 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第87页，获取 60 本书，累计 5207 本
+2026-07-09 22:52:42,284 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第88页，获取 60 本书，累计 5267 本
+2026-07-09 22:52:44,857 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第89页，获取 60 本书，累计 5327 本
+2026-07-09 22:52:46,550 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第90页，获取 60 本书，累计 5387 本
+2026-07-09 22:52:50,133 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第91页，获取 60 本书，累计 5447 本
+2026-07-09 22:52:53,467 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第92页，获取 60 本书，累计 5507 本
+2026-07-09 22:52:55,918 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第93页，获取 60 本书，累计 5567 本
+2026-07-09 22:52:59,078 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第94页，获取 60 本书，累计 5627 本
+2026-07-09 22:53:02,507 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第95页，获取 60 本书，累计 5687 本
+2026-07-09 22:53:06,169 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第96页，获取 60 本书，累计 5747 本
+2026-07-09 22:53:09,546 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第97页，获取 60 本书，累计 5807 本
+2026-07-09 22:53:11,415 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第98页，获取 60 本书，累计 5867 本
+2026-07-09 22:53:14,932 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第99页，获取 60 本书，累计 5927 本
+2026-07-09 22:53:16,638 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 第100页，获取 60 本书，累计 5987 本
+2026-07-09 22:53:19,028 - spiders.dangdang_spider - INFO - 分类 '高职高专教材' 爬取完成，共获取 5987 本书
+2026-07-09 22:53:19,225 - __main__ - INFO - [高职高专教材] 写入数据库 5860 条新记录
+2026-07-09 22:53:19,228 - __main__ - INFO - 数据库当前总记录数: 24014
+2026-07-09 22:53:20,942 - spiders.dangdang_spider - INFO - 正在处理分类 [9/688]: 中职教材
+2026-07-09 22:53:21,434 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第1页，获取 60 本书，累计 60 本
+2026-07-09 22:53:24,679 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第2页，获取 60 本书，累计 120 本
+2026-07-09 22:53:27,989 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第3页，获取 60 本书，累计 180 本
+2026-07-09 22:53:29,784 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第4页，获取 59 本书，累计 239 本
+2026-07-09 22:53:31,855 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第5页，获取 60 本书，累计 299 本
+2026-07-09 22:53:33,926 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第6页，获取 60 本书，累计 359 本
+2026-07-09 22:53:36,230 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第7页，获取 60 本书，累计 419 本
+2026-07-09 22:53:37,991 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第8页，获取 60 本书，累计 479 本
+2026-07-09 22:53:40,487 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第9页，获取 59 本书，累计 538 本
+2026-07-09 22:53:43,815 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第10页，获取 60 本书，累计 598 本
+2026-07-09 22:53:46,927 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第11页，获取 59 本书，累计 657 本
+2026-07-09 22:53:48,520 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第12页，获取 60 本书，累计 717 本
+2026-07-09 22:53:50,222 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第13页，获取 60 本书，累计 777 本
+2026-07-09 22:53:53,628 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第14页，获取 60 本书，累计 837 本
+2026-07-09 22:53:56,562 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第15页，获取 60 本书，累计 897 本
+2026-07-09 22:53:58,562 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第16页，获取 60 本书，累计 957 本
+2026-07-09 22:54:01,141 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第17页，获取 60 本书，累计 1017 本
+2026-07-09 22:54:04,876 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第18页，获取 60 本书，累计 1077 本
+2026-07-09 22:54:07,460 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第19页，获取 60 本书，累计 1137 本
+2026-07-09 22:54:10,304 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第20页，获取 60 本书，累计 1197 本
+2026-07-09 22:54:12,468 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第21页，获取 60 本书，累计 1257 本
+2026-07-09 22:54:14,077 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第22页，获取 60 本书，累计 1317 本
+2026-07-09 22:54:16,838 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第23页，获取 60 本书，累计 1377 本
+2026-07-09 22:54:19,423 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第24页，获取 60 本书，累计 1437 本
+2026-07-09 22:54:21,124 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第25页，获取 60 本书，累计 1497 本
+2026-07-09 22:54:23,268 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第26页，获取 60 本书，累计 1557 本
+2026-07-09 22:54:26,234 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第27页，获取 60 本书，累计 1617 本
+2026-07-09 22:54:28,765 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第28页，获取 60 本书，累计 1677 本
+2026-07-09 22:54:32,146 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第29页，获取 60 本书，累计 1737 本
+2026-07-09 22:54:33,983 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第30页，获取 60 本书，累计 1797 本
+2026-07-09 22:54:35,633 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第31页，获取 60 本书，累计 1857 本
+2026-07-09 22:54:38,958 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第32页，获取 60 本书，累计 1917 本
+2026-07-09 22:54:41,890 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第33页，获取 60 本书，累计 1977 本
+2026-07-09 22:54:44,450 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第34页，获取 60 本书，累计 2037 本
+2026-07-09 22:54:46,895 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第35页，获取 60 本书，累计 2097 本
+2026-07-09 22:54:49,511 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第36页，获取 60 本书，累计 2157 本
+2026-07-09 22:54:52,354 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第37页，获取 60 本书，累计 2217 本
+2026-07-09 22:54:55,233 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第38页，获取 60 本书，累计 2277 本
+2026-07-09 22:54:57,130 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第39页，获取 60 本书，累计 2337 本
+2026-07-09 22:54:59,208 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第40页，获取 60 本书，累计 2397 本
+2026-07-09 22:55:00,745 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第41页，获取 60 本书，累计 2457 本
+2026-07-09 22:55:04,143 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第42页，获取 60 本书，累计 2517 本
+2026-07-09 22:55:06,462 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第43页，获取 60 本书，累计 2577 本
+2026-07-09 22:55:08,573 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第44页，获取 60 本书，累计 2637 本
+2026-07-09 22:55:12,255 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第45页，获取 60 本书，累计 2697 本
+2026-07-09 22:55:15,283 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第46页，获取 60 本书，累计 2757 本
+2026-07-09 22:55:17,889 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第47页，获取 60 本书，累计 2817 本
+2026-07-09 22:55:20,224 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第48页，获取 60 本书，累计 2877 本
+2026-07-09 22:55:23,268 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第49页，获取 60 本书，累计 2937 本
+2026-07-09 22:55:27,081 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第50页，获取 60 本书，累计 2997 本
+2026-07-09 22:55:29,278 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第51页，获取 60 本书，累计 3057 本
+2026-07-09 22:55:32,025 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第52页，获取 60 本书，累计 3117 本
+2026-07-09 22:55:34,840 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第53页，获取 60 本书，累计 3177 本
+2026-07-09 22:55:38,191 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第54页，获取 60 本书，累计 3237 本
+2026-07-09 22:55:40,190 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第55页，获取 60 本书，累计 3297 本
+2026-07-09 22:55:42,904 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第56页，获取 60 本书，累计 3357 本
+2026-07-09 22:55:45,076 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第57页，获取 60 本书，累计 3417 本
+2026-07-09 22:55:48,612 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第58页，获取 60 本书，累计 3477 本
+2026-07-09 22:55:50,265 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第59页，获取 60 本书，累计 3537 本
+2026-07-09 22:55:53,823 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第60页，获取 60 本书，累计 3597 本
+2026-07-09 22:55:56,823 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第61页，获取 60 本书，累计 3657 本
+2026-07-09 22:55:59,228 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第62页，获取 60 本书，累计 3717 本
+2026-07-09 22:56:02,224 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第63页，获取 60 本书，累计 3777 本
+2026-07-09 22:56:05,110 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第64页，获取 60 本书，累计 3837 本
+2026-07-09 22:56:08,403 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第65页，获取 60 本书，累计 3897 本
+2026-07-09 22:56:10,203 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第66页，获取 60 本书，累计 3957 本
+2026-07-09 22:56:12,649 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第67页，获取 60 本书，累计 4017 本
+2026-07-09 22:56:15,848 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第68页，获取 60 本书，累计 4077 本
+2026-07-09 22:56:18,502 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第69页，获取 60 本书，累计 4137 本
+2026-07-09 22:56:20,002 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第70页，获取 60 本书，累计 4197 本
+2026-07-09 22:56:22,202 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第71页，获取 60 本书，累计 4257 本
+2026-07-09 22:56:24,939 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第72页，获取 60 本书，累计 4317 本
+2026-07-09 22:56:28,207 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第73页，获取 60 本书，累计 4377 本
+2026-07-09 22:56:31,733 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第74页，获取 60 本书，累计 4437 本
+2026-07-09 22:56:33,678 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第75页，获取 60 本书，累计 4497 本
+2026-07-09 22:56:36,262 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第76页，获取 60 本书，累计 4557 本
+2026-07-09 22:56:39,162 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第77页，获取 60 本书，累计 4617 本
+2026-07-09 22:56:40,811 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第78页，获取 60 本书，累计 4677 本
+2026-07-09 22:56:44,321 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第79页，获取 60 本书，累计 4737 本
+2026-07-09 22:56:47,856 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第80页，获取 60 本书，累计 4797 本
+2026-07-09 22:56:50,792 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第81页，获取 60 本书，累计 4857 本
+2026-07-09 22:56:52,534 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第82页，获取 60 本书，累计 4917 本
+2026-07-09 22:56:55,510 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第83页，获取 60 本书，累计 4977 本
+2026-07-09 22:56:59,063 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第84页，获取 60 本书，累计 5037 本
+2026-07-09 22:57:01,719 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第85页，获取 60 本书，累计 5097 本
+2026-07-09 22:57:04,797 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第86页，获取 60 本书，累计 5157 本
+2026-07-09 22:57:08,167 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第87页，获取 60 本书，累计 5217 本
+2026-07-09 22:57:11,034 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第88页，获取 60 本书，累计 5277 本
+2026-07-09 22:57:14,367 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第89页，获取 60 本书，累计 5337 本
+2026-07-09 22:57:17,143 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第90页，获取 60 本书，累计 5397 本
+2026-07-09 22:57:19,170 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第91页，获取 60 本书，累计 5457 本
+2026-07-09 22:57:21,627 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第92页，获取 60 本书，累计 5517 本
+2026-07-09 22:57:23,272 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第93页，获取 60 本书，累计 5577 本
+2026-07-09 22:57:26,193 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第94页，获取 60 本书，累计 5637 本
+2026-07-09 22:57:28,921 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第95页，获取 60 本书，累计 5697 本
+2026-07-09 22:57:31,621 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第96页，获取 60 本书，累计 5757 本
+2026-07-09 22:57:34,070 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第97页，获取 60 本书，累计 5817 本
+2026-07-09 22:57:36,434 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第98页，获取 60 本书，累计 5877 本
+2026-07-09 22:57:39,067 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第99页，获取 60 本书，累计 5937 本
+2026-07-09 22:57:42,475 - spiders.dangdang_spider - INFO - 分类 '中职教材' 第100页，获取 60 本书，累计 5997 本
+2026-07-09 22:57:45,328 - spiders.dangdang_spider - INFO - 分类 '中职教材' 爬取完成，共获取 5997 本书
+2026-07-09 22:57:45,467 - __main__ - INFO - [中职教材] 写入数据库 5866 条新记录
+2026-07-09 22:57:45,469 - __main__ - INFO - 数据库当前总记录数: 29880
+2026-07-09 22:57:47,875 - spiders.dangdang_spider - INFO - 正在处理分类 [10/688]: 成人教育教材
+2026-07-09 22:57:48,409 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第1页，获取 60 本书，累计 60 本
+2026-07-09 22:57:51,608 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第2页，获取 60 本书，累计 120 本
+2026-07-09 22:57:54,076 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第3页，获取 60 本书，累计 180 本
+2026-07-09 22:57:55,573 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第4页，获取 60 本书，累计 240 本
+2026-07-09 22:57:57,989 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第5页，获取 60 本书，累计 300 本
+2026-07-09 22:57:59,663 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第6页，获取 60 本书，累计 360 本
+2026-07-09 22:58:01,464 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第7页，获取 60 本书，累计 420 本
+2026-07-09 22:58:03,310 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第8页，获取 60 本书，累计 480 本
+2026-07-09 22:58:05,591 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第9页，获取 60 本书，累计 540 本
+2026-07-09 22:58:07,780 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第10页，获取 60 本书，累计 600 本
+2026-07-09 22:58:09,547 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第11页，获取 60 本书，累计 660 本
+2026-07-09 22:58:12,483 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第12页，获取 60 本书，累计 720 本
+2026-07-09 22:58:15,666 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第13页，获取 60 本书，累计 780 本
+2026-07-09 22:58:18,581 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第14页，获取 60 本书，累计 840 本
+2026-07-09 22:58:20,871 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第15页，获取 60 本书，累计 900 本
+2026-07-09 22:58:23,461 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第16页，获取 60 本书，累计 960 本
+2026-07-09 22:58:25,483 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第17页，获取 60 本书，累计 1020 本
+2026-07-09 22:58:28,184 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第18页，获取 60 本书，累计 1080 本
+2026-07-09 22:58:31,202 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第19页，获取 60 本书，累计 1140 本
+2026-07-09 22:58:33,081 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第20页，获取 60 本书，累计 1200 本
+2026-07-09 22:58:34,777 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第21页，获取 60 本书，累计 1260 本
+2026-07-09 22:58:38,003 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第22页，获取 60 本书，累计 1320 本
+2026-07-09 22:58:40,803 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第23页，获取 60 本书，累计 1380 本
+2026-07-09 22:58:42,803 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第24页，获取 60 本书，累计 1440 本
+2026-07-09 22:58:45,292 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第25页，获取 60 本书，累计 1500 本
+2026-07-09 22:58:47,526 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第26页，获取 60 本书，累计 1560 本
+2026-07-09 22:58:49,940 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第27页，获取 60 本书，累计 1620 本
+2026-07-09 22:58:51,613 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第28页，获取 60 本书，累计 1680 本
+2026-07-09 22:58:53,578 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第29页，获取 60 本书，累计 1740 本
+2026-07-09 22:58:56,197 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第30页，获取 60 本书，累计 1800 本
+2026-07-09 22:58:58,793 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第31页，获取 60 本书，累计 1860 本
+2026-07-09 22:59:01,591 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第32页，获取 60 本书，累计 1920 本
+2026-07-09 22:59:04,761 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第33页，获取 60 本书，累计 1980 本
+2026-07-09 22:59:07,552 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第34页，获取 60 本书，累计 2040 本
+2026-07-09 22:59:10,111 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第35页，获取 60 本书，累计 2100 本
+2026-07-09 22:59:12,795 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第36页，获取 60 本书，累计 2160 本
+2026-07-09 22:59:14,864 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第37页，获取 60 本书，累计 2220 本
+2026-07-09 22:59:17,018 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第38页，获取 60 本书，累计 2280 本
+2026-07-09 22:59:20,260 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第39页，获取 60 本书，累计 2340 本
+2026-07-09 22:59:23,699 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第40页，获取 60 本书，累计 2400 本
+2026-07-09 22:59:26,930 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第41页，获取 60 本书，累计 2460 本
+2026-07-09 22:59:28,554 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第42页，获取 60 本书，累计 2520 本
+2026-07-09 22:59:30,619 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第43页，获取 60 本书，累计 2580 本
+2026-07-09 22:59:33,861 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第44页，获取 60 本书，累计 2640 本
+2026-07-09 22:59:36,941 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第45页，获取 60 本书，累计 2700 本
+2026-07-09 22:59:40,458 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第46页，获取 60 本书，累计 2760 本
+2026-07-09 22:59:43,748 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第47页，获取 60 本书，累计 2820 本
+2026-07-09 22:59:46,921 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第48页，获取 60 本书，累计 2880 本
+2026-07-09 22:59:50,447 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第49页，获取 60 本书，累计 2940 本
+2026-07-09 22:59:53,683 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第50页，获取 60 本书，累计 3000 本
+2026-07-09 22:59:55,901 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第51页，获取 60 本书，累计 3060 本
+2026-07-09 22:59:59,227 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第52页，获取 60 本书，累计 3120 本
+2026-07-09 23:00:01,023 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第53页，获取 60 本书，累计 3180 本
+2026-07-09 23:00:04,411 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第54页，获取 60 本书，累计 3240 本
+2026-07-09 23:00:07,582 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第55页，获取 60 本书，累计 3300 本
+2026-07-09 23:00:10,851 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第56页，获取 60 本书，累计 3360 本
+2026-07-09 23:00:13,912 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第57页，获取 60 本书，累计 3420 本
+2026-07-09 23:00:17,215 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第58页，获取 60 本书，累计 3480 本
+2026-07-09 23:00:19,400 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第59页，获取 60 本书，累计 3540 本
+2026-07-09 23:00:21,927 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第60页，获取 60 本书，累计 3600 本
+2026-07-09 23:00:23,749 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第61页，获取 60 本书，累计 3660 本
+2026-07-09 23:00:26,509 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第62页，获取 60 本书，累计 3720 本
+2026-07-09 23:00:29,852 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第63页，获取 60 本书，累计 3780 本
+2026-07-09 23:00:31,679 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第64页，获取 60 本书，累计 3840 本
+2026-07-09 23:00:34,585 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第65页，获取 60 本书，累计 3900 本
+2026-07-09 23:00:37,752 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第66页，获取 60 本书，累计 3960 本
+2026-07-09 23:00:40,155 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第67页，获取 60 本书，累计 4020 本
+2026-07-09 23:00:43,391 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第68页，获取 60 本书，累计 4080 本
+2026-07-09 23:00:46,197 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第69页，获取 60 本书，累计 4140 本
+2026-07-09 23:00:47,762 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第70页，获取 60 本书，累计 4200 本
+2026-07-09 23:00:51,009 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第71页，获取 60 本书，累计 4260 本
+2026-07-09 23:00:54,148 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第72页，获取 60 本书，累计 4320 本
+2026-07-09 23:00:56,918 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第73页，获取 60 本书，累计 4380 本
+2026-07-09 23:00:59,922 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第74页，获取 60 本书，累计 4440 本
+2026-07-09 23:01:01,391 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第75页，获取 60 本书，累计 4500 本
+2026-07-09 23:01:03,130 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第76页，获取 60 本书，累计 4560 本
+2026-07-09 23:01:05,876 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第77页，获取 60 本书，累计 4620 本
+2026-07-09 23:01:08,295 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第78页，获取 60 本书，累计 4680 本
+2026-07-09 23:01:10,183 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第79页，获取 60 本书，累计 4740 本
+2026-07-09 23:01:12,638 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第80页，获取 60 本书，累计 4800 本
+2026-07-09 23:01:15,420 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第81页，获取 60 本书，累计 4860 本
+2026-07-09 23:01:18,293 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第82页，获取 60 本书，累计 4920 本
+2026-07-09 23:01:21,294 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第83页，获取 60 本书，累计 4980 本
+2026-07-09 23:01:24,759 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第84页，获取 60 本书，累计 5040 本
+2026-07-09 23:01:27,693 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第85页，获取 60 本书，累计 5100 本
+2026-07-09 23:01:30,685 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第86页，获取 60 本书，累计 5160 本
+2026-07-09 23:01:32,494 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第87页，获取 60 本书，累计 5220 本
+2026-07-09 23:01:36,912 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第88页，获取 60 本书，累计 5280 本
+2026-07-09 23:01:39,065 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第89页，获取 60 本书，累计 5340 本
+2026-07-09 23:01:41,511 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第90页，获取 60 本书，累计 5400 本
+2026-07-09 23:01:44,542 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第91页，获取 60 本书，累计 5460 本
+2026-07-09 23:01:46,439 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第92页，获取 60 本书，累计 5520 本
+2026-07-09 23:01:49,626 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第93页，获取 60 本书，累计 5580 本
+2026-07-09 23:01:53,009 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第94页，获取 60 本书，累计 5640 本
+2026-07-09 23:01:55,183 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第95页，获取 60 本书，累计 5700 本
+2026-07-09 23:01:56,629 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第96页，获取 60 本书，累计 5760 本
+2026-07-09 23:01:59,285 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第97页，获取 60 本书，累计 5820 本
+2026-07-09 23:02:01,614 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第98页，获取 60 本书，累计 5880 本
+2026-07-09 23:02:03,999 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第99页，获取 60 本书，累计 5940 本
+2026-07-09 23:02:06,504 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 第100页，获取 60 本书，累计 6000 本
+2026-07-09 23:02:07,852 - spiders.dangdang_spider - INFO - 分类 '成人教育教材' 爬取完成，共获取 6000 本书
+2026-07-09 23:02:08,010 - __main__ - INFO - [成人教育教材] 写入数据库 5828 条新记录
+2026-07-09 23:02:08,013 - __main__ - INFO - 数据库当前总记录数: 35708
+2026-07-09 23:02:10,742 - spiders.dangdang_spider - INFO - 正在处理分类 [11/688]: 职业技术培训教材
+2026-07-09 23:02:11,152 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第1页，获取 57 本书，累计 57 本
+2026-07-09 23:02:13,867 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第2页，获取 60 本书，累计 117 本
+2026-07-09 23:02:16,549 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第3页，获取 55 本书，累计 172 本
+2026-07-09 23:02:19,180 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第4页，获取 57 本书，累计 229 本
+2026-07-09 23:02:21,714 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第5页，获取 60 本书，累计 289 本
+2026-07-09 23:02:24,179 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第6页，获取 60 本书，累计 349 本
+2026-07-09 23:02:26,351 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第7页，获取 60 本书，累计 409 本
+2026-07-09 23:02:28,877 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第8页，获取 60 本书，累计 469 本
+2026-07-09 23:02:30,715 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第9页，获取 60 本书，累计 529 本
+2026-07-09 23:02:33,533 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第10页，获取 60 本书，累计 589 本
+2026-07-09 23:02:35,307 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第11页，获取 59 本书，累计 648 本
+2026-07-09 23:02:38,265 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第12页，获取 60 本书，累计 708 本
+2026-07-09 23:02:40,492 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第13页，获取 60 本书，累计 768 本
+2026-07-09 23:02:43,305 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第14页，获取 60 本书，累计 828 本
+2026-07-09 23:02:45,097 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第15页，获取 60 本书，累计 888 本
+2026-07-09 23:02:49,036 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第16页，获取 60 本书，累计 948 本
+2026-07-09 23:02:52,235 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第17页，获取 60 本书，累计 1008 本
+2026-07-09 23:02:54,752 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第18页，获取 60 本书，累计 1068 本
+2026-07-09 23:02:57,454 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第19页，获取 60 本书，累计 1128 本
+2026-07-09 23:03:00,183 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第20页，获取 60 本书，累计 1188 本
+2026-07-09 23:03:02,247 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第21页，获取 60 本书，累计 1248 本
+2026-07-09 23:03:04,508 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第22页，获取 60 本书，累计 1308 本
+2026-07-09 23:03:07,495 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第23页，获取 60 本书，累计 1368 本
+2026-07-09 23:03:10,619 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第24页，获取 60 本书，累计 1428 本
+2026-07-09 23:03:13,912 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第25页，获取 60 本书，累计 1488 本
+2026-07-09 23:03:16,420 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第26页，获取 60 本书，累计 1548 本
+2026-07-09 23:03:18,087 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第27页，获取 60 本书，累计 1608 本
+2026-07-09 23:03:20,719 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第28页，获取 60 本书，累计 1668 本
+2026-07-09 23:03:22,740 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第29页，获取 60 本书，累计 1728 本
+2026-07-09 23:03:24,936 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第30页，获取 60 本书，累计 1788 本
+2026-07-09 23:03:28,313 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第31页，获取 60 本书，累计 1848 本
+2026-07-09 23:03:29,953 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第32页，获取 60 本书，累计 1908 本
+2026-07-09 23:03:32,737 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第33页，获取 60 本书，累计 1968 本
+2026-07-09 23:03:35,458 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第34页，获取 60 本书，累计 2028 本
+2026-07-09 23:03:38,538 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第35页，获取 60 本书，累计 2088 本
+2026-07-09 23:03:40,394 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第36页，获取 60 本书，累计 2148 本
+2026-07-09 23:03:44,039 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第37页，获取 60 本书，累计 2208 本
+2026-07-09 23:03:47,786 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第38页，获取 60 本书，累计 2268 本
+2026-07-09 23:03:51,026 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第39页，获取 60 本书，累计 2328 本
+2026-07-09 23:03:52,786 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第40页，获取 60 本书，累计 2388 本
+2026-07-09 23:03:56,168 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第41页，获取 60 本书，累计 2448 本
+2026-07-09 23:03:58,516 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第42页，获取 60 本书，累计 2508 本
+2026-07-09 23:04:01,860 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第43页，获取 60 本书，累计 2568 本
+2026-07-09 23:04:04,370 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第44页，获取 60 本书，累计 2628 本
+2026-07-09 23:04:08,001 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第45页，获取 60 本书，累计 2688 本
+2026-07-09 23:04:09,913 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第46页，获取 60 本书，累计 2748 本
+2026-07-09 23:04:11,985 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第47页，获取 60 本书，累计 2808 本
+2026-07-09 23:04:15,120 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第48页，获取 60 本书，累计 2868 本
+2026-07-09 23:04:17,143 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第49页，获取 60 本书，累计 2928 本
+2026-07-09 23:04:19,928 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第50页，获取 60 本书，累计 2988 本
+2026-07-09 23:04:22,395 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第51页，获取 60 本书，累计 3048 本
+2026-07-09 23:04:24,267 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第52页，获取 60 本书，累计 3108 本
+2026-07-09 23:04:26,292 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第53页，获取 60 本书，累计 3168 本
+2026-07-09 23:04:30,027 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第54页，获取 60 本书，累计 3228 本
+2026-07-09 23:04:33,371 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第55页，获取 60 本书，累计 3288 本
+2026-07-09 23:04:36,233 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第56页，获取 60 本书，累计 3348 本
+2026-07-09 23:04:39,589 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第57页，获取 60 本书，累计 3408 本
+2026-07-09 23:04:42,969 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第58页，获取 60 本书，累计 3468 本
+2026-07-09 23:04:44,896 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第59页，获取 60 本书，累计 3528 本
+2026-07-09 23:04:46,614 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第60页，获取 60 本书，累计 3588 本
+2026-07-09 23:04:48,307 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第61页，获取 60 本书，累计 3648 本
+2026-07-09 23:04:50,728 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第62页，获取 60 本书，累计 3708 本
+2026-07-09 23:04:53,078 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第63页，获取 60 本书，累计 3768 本
+2026-07-09 23:04:56,471 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第64页，获取 60 本书，累计 3828 本
+2026-07-09 23:04:59,786 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第65页，获取 60 本书，累计 3888 本
+2026-07-09 23:05:03,078 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第66页，获取 60 本书，累计 3948 本
+2026-07-09 23:05:05,785 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第67页，获取 60 本书，累计 4008 本
+2026-07-09 23:05:08,335 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第68页，获取 60 本书，累计 4068 本
+2026-07-09 23:05:11,356 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第69页，获取 60 本书，累计 4128 本
+2026-07-09 23:05:13,769 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第70页，获取 60 本书，累计 4188 本
+2026-07-09 23:05:16,954 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第71页，获取 60 本书，累计 4248 本
+2026-07-09 23:05:20,730 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第72页，获取 60 本书，累计 4308 本
+2026-07-09 23:05:23,586 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第73页，获取 60 本书，累计 4368 本
+2026-07-09 23:05:26,709 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第74页，获取 60 本书，累计 4428 本
+2026-07-09 23:05:31,521 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第75页，获取 60 本书，累计 4488 本
+2026-07-09 23:05:33,889 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第76页，获取 60 本书，累计 4548 本
+2026-07-09 23:05:36,012 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第77页，获取 60 本书，累计 4608 本
+2026-07-09 23:05:39,408 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第78页，获取 60 本书，累计 4668 本
+2026-07-09 23:05:41,836 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第79页，获取 60 本书，累计 4728 本
+2026-07-09 23:05:44,732 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第80页，获取 60 本书，累计 4788 本
+2026-07-09 23:05:48,335 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第81页，获取 60 本书，累计 4848 本
+2026-07-09 23:05:51,081 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第82页，获取 60 本书，累计 4908 本
+2026-07-09 23:05:54,597 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第83页，获取 60 本书，累计 4968 本
+2026-07-09 23:05:57,870 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第84页，获取 60 本书，累计 5028 本
+2026-07-09 23:06:00,500 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第85页，获取 60 本书，累计 5088 本
+2026-07-09 23:06:02,097 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第86页，获取 60 本书，累计 5148 本
+2026-07-09 23:06:04,492 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第87页，获取 60 本书，累计 5208 本
+2026-07-09 23:06:08,063 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第88页，获取 60 本书，累计 5268 本
+2026-07-09 23:06:11,536 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第89页，获取 60 本书，累计 5328 本
+2026-07-09 23:06:14,864 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第90页，获取 60 本书，累计 5388 本
+2026-07-09 23:06:18,476 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第91页，获取 60 本书，累计 5448 本
+2026-07-09 23:06:20,763 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第92页，获取 60 本书，累计 5508 本
+2026-07-09 23:06:25,137 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第93页，获取 60 本书，累计 5568 本
+2026-07-09 23:06:28,731 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第94页，获取 60 本书，累计 5628 本
+2026-07-09 23:06:30,649 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第95页，获取 60 本书，累计 5688 本
+2026-07-09 23:06:33,460 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第96页，获取 60 本书，累计 5748 本
+2026-07-09 23:06:36,656 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第97页，获取 60 本书，累计 5808 本
+2026-07-09 23:06:39,330 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第98页，获取 60 本书，累计 5868 本
+2026-07-09 23:06:41,509 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第99页，获取 60 本书，累计 5928 本
+2026-07-09 23:06:43,735 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 第100页，获取 60 本书，累计 5988 本
+2026-07-09 23:06:44,833 - spiders.dangdang_spider - INFO - 分类 '职业技术培训教材' 爬取完成，共获取 5988 本书
+2026-07-09 23:06:45,014 - __main__ - INFO - [职业技术培训教材] 写入数据库 5726 条新记录
+2026-07-09 23:06:45,017 - __main__ - INFO - 数据库当前总记录数: 41434
+2026-07-09 23:06:46,407 - spiders.dangdang_spider - INFO - 正在处理分类 [12/688]: 公共课
+2026-07-09 23:06:47,022 - spiders.dangdang_spider - INFO - 分类 '公共课' 第1页，获取 52 本书，累计 52 本
+2026-07-09 23:06:49,285 - spiders.dangdang_spider - INFO - 分类 '公共课' 第2页，获取 58 本书，累计 110 本
+2026-07-09 23:06:52,558 - spiders.dangdang_spider - INFO - 分类 '公共课' 第3页，获取 59 本书，累计 169 本
+2026-07-09 23:06:56,180 - spiders.dangdang_spider - INFO - 分类 '公共课' 第4页，获取 60 本书，累计 229 本
+2026-07-09 23:06:58,031 - spiders.dangdang_spider - INFO - 分类 '公共课' 第5页，获取 58 本书，累计 287 本
+2026-07-09 23:07:00,201 - spiders.dangdang_spider - INFO - 分类 '公共课' 第6页，获取 58 本书，累计 345 本
+2026-07-09 23:07:02,567 - spiders.dangdang_spider - INFO - 分类 '公共课' 第7页，获取 58 本书，累计 403 本
+2026-07-09 23:07:04,619 - spiders.dangdang_spider - INFO - 分类 '公共课' 第8页，获取 60 本书，累计 463 本
+2026-07-09 23:07:06,625 - spiders.dangdang_spider - INFO - 分类 '公共课' 第9页，获取 59 本书，累计 522 本
+2026-07-09 23:07:09,873 - spiders.dangdang_spider - INFO - 分类 '公共课' 第10页，获取 60 本书，累计 582 本
+2026-07-09 23:07:11,562 - spiders.dangdang_spider - INFO - 分类 '公共课' 第11页，获取 60 本书，累计 642 本
+2026-07-09 23:07:15,844 - spiders.dangdang_spider - INFO - 分类 '公共课' 第12页，获取 60 本书，累计 702 本
+2026-07-09 23:07:17,740 - spiders.dangdang_spider - INFO - 分类 '公共课' 第13页，获取 60 本书，累计 762 本
+2026-07-09 23:07:20,268 - spiders.dangdang_spider - INFO - 分类 '公共课' 第14页，获取 60 本书，累计 822 本
+2026-07-09 23:07:22,898 - spiders.dangdang_spider - INFO - 分类 '公共课' 第15页，获取 60 本书，累计 882 本
+2026-07-09 23:07:24,997 - spiders.dangdang_spider - INFO - 分类 '公共课' 第16页，获取 58 本书，累计 940 本
+2026-07-09 23:07:28,247 - spiders.dangdang_spider - INFO - 分类 '公共课' 第17页，获取 58 本书，累计 998 本
+2026-07-09 23:07:31,883 - spiders.dangdang_spider - INFO - 分类 '公共课' 第18页，获取 60 本书，累计 1058 本
+2026-07-09 23:07:34,280 - spiders.dangdang_spider - INFO - 分类 '公共课' 第19页，获取 60 本书，累计 1118 本
+2026-07-09 23:07:37,201 - spiders.dangdang_spider - INFO - 分类 '公共课' 第20页，获取 60 本书，累计 1178 本
+2026-07-09 23:07:39,262 - spiders.dangdang_spider - INFO - 分类 '公共课' 第21页，获取 59 本书，累计 1237 本
+2026-07-09 23:07:42,962 - spiders.dangdang_spider - INFO - 分类 '公共课' 第22页，获取 60 本书，累计 1297 本
+2026-07-09 23:07:45,088 - spiders.dangdang_spider - INFO - 分类 '公共课' 第23页，获取 60 本书，累计 1357 本
+2026-07-09 23:07:48,781 - spiders.dangdang_spider - INFO - 分类 '公共课' 第24页，获取 60 本书，累计 1417 本
+2026-07-09 23:07:51,388 - spiders.dangdang_spider - INFO - 分类 '公共课' 第25页，获取 60 本书，累计 1477 本
+2026-07-09 23:07:53,311 - spiders.dangdang_spider - INFO - 分类 '公共课' 第26页，获取 60 本书，累计 1537 本
+2026-07-09 23:07:56,043 - spiders.dangdang_spider - INFO - 分类 '公共课' 第27页，获取 60 本书，累计 1597 本
+2026-07-09 23:07:58,775 - spiders.dangdang_spider - INFO - 分类 '公共课' 第28页，获取 60 本书，累计 1657 本
+2026-07-09 23:08:00,536 - spiders.dangdang_spider - INFO - 分类 '公共课' 第29页，获取 60 本书，累计 1717 本
+2026-07-09 23:08:03,663 - spiders.dangdang_spider - INFO - 分类 '公共课' 第30页，获取 60 本书，累计 1777 本
+2026-07-09 23:08:06,095 - spiders.dangdang_spider - INFO - 分类 '公共课' 第31页，获取 60 本书，累计 1837 本
+2026-07-09 23:08:08,930 - spiders.dangdang_spider - INFO - 分类 '公共课' 第32页，获取 58 本书，累计 1895 本
+2026-07-09 23:08:11,484 - spiders.dangdang_spider - INFO - 分类 '公共课' 第33页，获取 60 本书，累计 1955 本
+2026-07-09 23:08:13,938 - spiders.dangdang_spider - INFO - 分类 '公共课' 第34页，获取 60 本书，累计 2015 本
+2026-07-09 23:08:17,104 - spiders.dangdang_spider - INFO - 分类 '公共课' 第35页，获取 60 本书，累计 2075 本
+2026-07-09 23:08:18,808 - spiders.dangdang_spider - INFO - 分类 '公共课' 第36页，获取 60 本书，累计 2135 本
+2026-07-09 23:08:21,654 - spiders.dangdang_spider - INFO - 分类 '公共课' 第37页，获取 60 本书，累计 2195 本
+2026-07-09 23:08:24,436 - spiders.dangdang_spider - INFO - 分类 '公共课' 第38页，获取 60 本书，累计 2255 本
+2026-07-09 23:08:27,212 - spiders.dangdang_spider - INFO - 分类 '公共课' 第39页，获取 60 本书，累计 2315 本
+2026-07-09 23:08:29,512 - spiders.dangdang_spider - INFO - 分类 '公共课' 第40页，获取 60 本书，累计 2375 本
+2026-07-09 23:08:32,471 - spiders.dangdang_spider - INFO - 分类 '公共课' 第41页，获取 60 本书，累计 2435 本
+2026-07-09 23:08:35,837 - spiders.dangdang_spider - INFO - 分类 '公共课' 第42页，获取 60 本书，累计 2495 本
+2026-07-09 23:08:38,101 - spiders.dangdang_spider - INFO - 分类 '公共课' 第43页，获取 60 本书，累计 2555 本
+2026-07-09 23:08:41,421 - spiders.dangdang_spider - INFO - 分类 '公共课' 第44页，获取 59 本书，累计 2614 本
+2026-07-09 23:08:43,895 - spiders.dangdang_spider - INFO - 分类 '公共课' 第45页，获取 60 本书，累计 2674 本
+2026-07-09 23:08:46,159 - spiders.dangdang_spider - INFO - 分类 '公共课' 第46页，获取 60 本书，累计 2734 本
+2026-07-09 23:08:48,859 - spiders.dangdang_spider - INFO - 分类 '公共课' 第47页，获取 60 本书，累计 2794 本
+2026-07-09 23:08:51,890 - spiders.dangdang_spider - INFO - 分类 '公共课' 第48页，获取 60 本书，累计 2854 本
+2026-07-09 23:08:55,639 - spiders.dangdang_spider - INFO - 分类 '公共课' 第49页，获取 60 本书，累计 2914 本
+2026-07-09 23:08:58,172 - spiders.dangdang_spider - INFO - 分类 '公共课' 第50页，获取 60 本书，累计 2974 本
+2026-07-09 23:09:01,302 - spiders.dangdang_spider - INFO - 分类 '公共课' 第51页，获取 60 本书，累计 3034 本
+2026-07-09 23:09:03,339 - spiders.dangdang_spider - INFO - 分类 '公共课' 第52页，获取 60 本书，累计 3094 本
+2026-07-09 23:09:06,608 - spiders.dangdang_spider - INFO - 分类 '公共课' 第53页，获取 60 本书，累计 3154 本
+2026-07-09 23:09:09,278 - spiders.dangdang_spider - INFO - 分类 '公共课' 第54页，获取 60 本书，累计 3214 本
+2026-07-09 23:09:11,199 - spiders.dangdang_spider - INFO - 分类 '公共课' 第55页，获取 60 本书，累计 3274 本
+2026-07-09 23:09:14,592 - spiders.dangdang_spider - INFO - 分类 '公共课' 第56页，获取 60 本书，累计 3334 本
+2026-07-09 23:09:16,685 - spiders.dangdang_spider - INFO - 分类 '公共课' 第57页，获取 60 本书，累计 3394 本
+2026-07-09 23:09:20,181 - spiders.dangdang_spider - INFO - 分类 '公共课' 第58页，获取 60 本书，累计 3454 本
+2026-07-09 23:09:24,963 - spiders.dangdang_spider - INFO - 分类 '公共课' 第59页，获取 60 本书，累计 3514 本
+2026-07-09 23:09:28,674 - spiders.dangdang_spider - INFO - 分类 '公共课' 第60页，获取 60 本书，累计 3574 本
+2026-07-09 23:09:31,016 - spiders.dangdang_spider - INFO - 分类 '公共课' 第61页，获取 60 本书，累计 3634 本
+2026-07-09 23:09:32,689 - spiders.dangdang_spider - INFO - 分类 '公共课' 第62页，获取 60 本书，累计 3694 本
+2026-07-09 23:09:35,048 - spiders.dangdang_spider - INFO - 分类 '公共课' 第63页，获取 60 本书，累计 3754 本
+2026-07-09 23:09:36,906 - spiders.dangdang_spider - INFO - 分类 '公共课' 第64页，获取 60 本书，累计 3814 本
+2026-07-09 23:09:39,651 - spiders.dangdang_spider - INFO - 分类 '公共课' 第65页，获取 60 本书，累计 3874 本
+2026-07-09 23:09:42,861 - spiders.dangdang_spider - INFO - 分类 '公共课' 第66页，获取 60 本书，累计 3934 本
+2026-07-09 23:09:44,963 - spiders.dangdang_spider - INFO - 分类 '公共课' 第67页，获取 60 本书，累计 3994 本
+2026-07-09 23:09:46,854 - spiders.dangdang_spider - INFO - 分类 '公共课' 第68页，获取 60 本书，累计 4054 本
+2026-07-09 23:09:49,757 - spiders.dangdang_spider - INFO - 分类 '公共课' 第69页，获取 60 本书，累计 4114 本
+2026-07-09 23:09:52,987 - spiders.dangdang_spider - INFO - 分类 '公共课' 第70页，获取 60 本书，累计 4174 本
+2026-07-09 23:09:54,678 - spiders.dangdang_spider - INFO - 分类 '公共课' 第71页，获取 60 本书，累计 4234 本
+2026-07-09 23:09:58,025 - spiders.dangdang_spider - INFO - 分类 '公共课' 第72页，获取 60 本书，累计 4294 本
+2026-07-09 23:10:01,859 - spiders.dangdang_spider - INFO - 分类 '公共课' 第73页，获取 60 本书，累计 4354 本
+2026-07-09 23:10:04,932 - spiders.dangdang_spider - INFO - 分类 '公共课' 第74页，获取 60 本书，累计 4414 本
+2026-07-09 23:10:08,227 - spiders.dangdang_spider - INFO - 分类 '公共课' 第75页，获取 60 本书，累计 4474 本
+2026-07-09 23:10:09,964 - spiders.dangdang_spider - INFO - 分类 '公共课' 第76页，获取 60 本书，累计 4534 本
+2026-07-09 23:10:13,508 - spiders.dangdang_spider - INFO - 分类 '公共课' 第77页，获取 60 本书，累计 4594 本
+2026-07-09 23:10:15,574 - spiders.dangdang_spider - INFO - 分类 '公共课' 第78页，获取 60 本书，累计 4654 本
+2026-07-09 23:10:17,641 - spiders.dangdang_spider - INFO - 分类 '公共课' 第79页，获取 60 本书，累计 4714 本
+2026-07-09 23:10:20,580 - spiders.dangdang_spider - INFO - 分类 '公共课' 第80页，获取 60 本书，累计 4774 本
+2026-07-09 23:10:23,886 - spiders.dangdang_spider - INFO - 分类 '公共课' 第81页，获取 60 本书，累计 4834 本
+2026-07-09 23:10:25,902 - spiders.dangdang_spider - INFO - 分类 '公共课' 第82页，获取 60 本书，累计 4894 本
+2026-07-09 23:10:28,333 - spiders.dangdang_spider - INFO - 分类 '公共课' 第83页，获取 60 本书，累计 4954 本
+2026-07-09 23:10:31,833 - spiders.dangdang_spider - INFO - 分类 '公共课' 第84页，获取 60 本书，累计 5014 本
+2026-07-09 23:10:35,290 - spiders.dangdang_spider - INFO - 分类 '公共课' 第85页，获取 60 本书，累计 5074 本
+2026-07-09 23:10:37,813 - spiders.dangdang_spider - INFO - 分类 '公共课' 第86页，获取 60 本书，累计 5134 本
+2026-07-09 23:10:41,594 - spiders.dangdang_spider - INFO - 分类 '公共课' 第87页，获取 60 本书，累计 5194 本
+2026-07-09 23:10:44,822 - spiders.dangdang_spider - INFO - 分类 '公共课' 第88页，获取 60 本书，累计 5254 本
+2026-07-09 23:10:47,201 - spiders.dangdang_spider - INFO - 分类 '公共课' 第89页，获取 60 本书，累计 5314 本
+2026-07-09 23:10:50,245 - spiders.dangdang_spider - INFO - 分类 '公共课' 第90页，获取 60 本书，累计 5374 本
+2026-07-09 23:10:52,205 - spiders.dangdang_spider - INFO - 分类 '公共课' 第91页，获取 60 本书，累计 5434 本
+2026-07-09 23:10:55,509 - spiders.dangdang_spider - INFO - 分类 '公共课' 第92页，获取 60 本书，累计 5494 本
+2026-07-09 23:10:57,554 - spiders.dangdang_spider - INFO - 分类 '公共课' 第93页，获取 60 本书，累计 5554 本
+2026-07-09 23:10:59,337 - spiders.dangdang_spider - INFO - 分类 '公共课' 第94页，获取 60 本书，累计 5614 本
+2026-07-09 23:11:02,310 - spiders.dangdang_spider - INFO - 分类 '公共课' 第95页，获取 60 本书，累计 5674 本
+2026-07-09 23:11:05,327 - spiders.dangdang_spider - INFO - 分类 '公共课' 第96页，获取 60 本书，累计 5734 本
+2026-07-09 23:11:07,423 - spiders.dangdang_spider - INFO - 分类 '公共课' 第97页，获取 60 本书，累计 5794 本
+2026-07-09 23:11:11,123 - spiders.dangdang_spider - INFO - 分类 '公共课' 第98页，获取 60 本书，累计 5854 本
+2026-07-09 23:11:14,623 - spiders.dangdang_spider - INFO - 分类 '公共课' 第99页，获取 60 本书，累计 5914 本
+2026-07-09 23:11:18,512 - spiders.dangdang_spider - INFO - 分类 '公共课' 第100页，获取 60 本书，累计 5974 本
+2026-07-09 23:11:20,954 - spiders.dangdang_spider - INFO - 分类 '公共课' 爬取完成，共获取 5974 本书
+2026-07-09 23:11:21,221 - __main__ - INFO - [公共课] 写入数据库 5780 条新记录
+2026-07-09 23:11:21,223 - __main__ - INFO - 数据库当前总记录数: 47214
+2026-07-09 23:11:22,770 - spiders.dangdang_spider - INFO - 正在处理分类 [13/688]: 经济管理类
+2026-07-09 23:11:23,344 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第1页，获取 57 本书，累计 57 本
+2026-07-09 23:11:27,031 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第2页，获取 58 本书，累计 115 本
+2026-07-09 23:11:29,479 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第3页，获取 59 本书，累计 174 本
+2026-07-09 23:11:33,106 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第4页，获取 60 本书，累计 234 本
+2026-07-09 23:11:35,559 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第5页，获取 60 本书，累计 294 本
+2026-07-09 23:11:37,809 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第6页，获取 60 本书，累计 354 本
+2026-07-09 23:11:39,972 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第7页，获取 60 本书，累计 414 本
+2026-07-09 23:11:42,506 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第8页，获取 59 本书，累计 473 本
+2026-07-09 23:11:44,332 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第9页，获取 60 本书，累计 533 本
+2026-07-09 23:11:48,203 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第10页，获取 60 本书，累计 593 本
+2026-07-09 23:11:51,026 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第11页，获取 59 本书，累计 652 本
+2026-07-09 23:11:53,476 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第12页，获取 60 本书，累计 712 本
+2026-07-09 23:11:55,413 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第13页，获取 60 本书，累计 772 本
+2026-07-09 23:11:57,537 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第14页，获取 59 本书，累计 831 本
+2026-07-09 23:12:00,847 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第15页，获取 58 本书，累计 889 本
+2026-07-09 23:12:04,101 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第16页，获取 59 本书，累计 948 本
+2026-07-09 23:12:07,605 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第17页，获取 59 本书，累计 1007 本
+2026-07-09 23:12:10,385 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第18页，获取 59 本书，累计 1066 本
+2026-07-09 23:12:12,208 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第19页，获取 58 本书，累计 1124 本
+2026-07-09 23:12:14,987 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第20页，获取 60 本书，累计 1184 本
+2026-07-09 23:12:17,603 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第21页，获取 58 本书，累计 1242 本
+2026-07-09 23:12:19,465 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第22页，获取 58 本书，累计 1300 本
+2026-07-09 23:12:22,722 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第23页，获取 60 本书，累计 1360 本
+2026-07-09 23:12:24,878 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第24页，获取 59 本书，累计 1419 本
+2026-07-09 23:12:26,701 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第25页，获取 59 本书，累计 1478 本
+2026-07-09 23:12:29,674 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第26页，获取 58 本书，累计 1536 本
+2026-07-09 23:12:32,158 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第27页，获取 58 本书，累计 1594 本
+2026-07-09 23:12:35,522 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第28页，获取 58 本书，累计 1652 本
+2026-07-09 23:12:38,755 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第29页，获取 60 本书，累计 1712 本
+2026-07-09 23:12:40,335 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第30页，获取 60 本书，累计 1772 本
+2026-07-09 23:12:42,869 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第31页，获取 60 本书，累计 1832 本
+2026-07-09 23:12:46,296 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第32页，获取 60 本书，累计 1892 本
+2026-07-09 23:12:48,380 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第33页，获取 60 本书，累计 1952 本
+2026-07-09 23:12:50,781 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第34页，获取 60 本书，累计 2012 本
+2026-07-09 23:12:53,579 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第35页，获取 59 本书，累计 2071 本
+2026-07-09 23:12:56,550 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第36页，获取 60 本书，累计 2131 本
+2026-07-09 23:12:59,404 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第37页，获取 60 本书，累计 2191 本
+2026-07-09 23:13:01,149 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第38页，获取 60 本书，累计 2251 本
+2026-07-09 23:13:04,105 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第39页，获取 60 本书，累计 2311 本
+2026-07-09 23:13:07,603 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第40页，获取 60 本书，累计 2371 本
+2026-07-09 23:13:09,592 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第41页，获取 58 本书，累计 2429 本
+2026-07-09 23:13:12,781 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第42页，获取 60 本书，累计 2489 本
+2026-07-09 23:13:16,090 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第43页，获取 60 本书，累计 2549 本
+2026-07-09 23:13:18,338 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第44页，获取 60 本书，累计 2609 本
+2026-07-09 23:13:21,615 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第45页，获取 60 本书，累计 2669 本
+2026-07-09 23:13:23,482 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第46页，获取 60 本书，累计 2729 本
+2026-07-09 23:13:27,754 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第47页，获取 60 本书，累计 2789 本
+2026-07-09 23:13:31,474 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第48页，获取 60 本书，累计 2849 本
+2026-07-09 23:13:34,715 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第49页，获取 60 本书，累计 2909 本
+2026-07-09 23:13:38,542 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第50页，获取 60 本书，累计 2969 本
+2026-07-09 23:13:41,208 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第51页，获取 60 本书，累计 3029 本
+2026-07-09 23:13:43,474 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第52页，获取 60 本书，累计 3089 本
+2026-07-09 23:13:45,569 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第53页，获取 60 本书，累计 3149 本
+2026-07-09 23:13:48,958 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第54页，获取 60 本书，累计 3209 本
+2026-07-09 23:13:53,050 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第55页，获取 60 本书，累计 3269 本
+2026-07-09 23:13:56,325 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第56页，获取 60 本书，累计 3329 本
+2026-07-09 23:13:59,156 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第57页，获取 60 本书，累计 3389 本
+2026-07-09 23:14:02,294 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第58页，获取 60 本书，累计 3449 本
+2026-07-09 23:14:07,631 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第59页，获取 60 本书，累计 3509 本
+2026-07-09 23:14:09,826 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第60页，获取 60 本书，累计 3569 本
+2026-07-09 23:14:13,337 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第61页，获取 60 本书，累计 3629 本
+2026-07-09 23:14:16,660 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第62页，获取 60 本书，累计 3689 本
+2026-07-09 23:14:20,495 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第63页，获取 60 本书，累计 3749 本
+2026-07-09 23:14:22,637 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第64页，获取 60 本书，累计 3809 本
+2026-07-09 23:14:24,593 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第65页，获取 60 本书，累计 3869 本
+2026-07-09 23:14:27,228 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第66页，获取 60 本书，累计 3929 本
+2026-07-09 23:14:30,262 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第67页，获取 60 本书，累计 3989 本
+2026-07-09 23:14:32,218 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第68页，获取 60 本书，累计 4049 本
+2026-07-09 23:14:35,154 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第69页，获取 60 本书，累计 4109 本
+2026-07-09 23:14:37,240 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第70页，获取 60 本书，累计 4169 本
+2026-07-09 23:14:40,044 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第71页，获取 60 本书，累计 4229 本
+2026-07-09 23:14:41,913 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第72页，获取 60 本书，累计 4289 本
+2026-07-09 23:14:45,062 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第73页，获取 60 本书，累计 4349 本
+2026-07-09 23:14:48,309 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第74页，获取 60 本书，累计 4409 本
+2026-07-09 23:14:51,561 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第75页，获取 60 本书，累计 4469 本
+2026-07-09 23:14:54,845 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第76页，获取 60 本书，累计 4529 本
+2026-07-09 23:14:56,811 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第77页，获取 60 本书，累计 4589 本
+2026-07-09 23:14:59,240 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第78页，获取 60 本书，累计 4649 本
+2026-07-09 23:15:01,148 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第79页，获取 60 本书，累计 4709 本
+2026-07-09 23:15:03,632 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第80页，获取 60 本书，累计 4769 本
+2026-07-09 23:15:05,931 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第81页，获取 60 本书，累计 4829 本
+2026-07-09 23:15:09,603 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第82页，获取 60 本书，累计 4889 本
+2026-07-09 23:15:12,565 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第83页，获取 60 本书，累计 4949 本
+2026-07-09 23:15:14,953 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第84页，获取 60 本书，累计 5009 本
+2026-07-09 23:15:17,323 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第85页，获取 60 本书，累计 5069 本
+2026-07-09 23:15:21,002 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第86页，获取 60 本书，累计 5129 本
+2026-07-09 23:15:23,913 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第87页，获取 60 本书，累计 5189 本
+2026-07-09 23:15:25,730 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第88页，获取 60 本书，累计 5249 本
+2026-07-09 23:15:29,091 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第89页，获取 60 本书，累计 5309 本
+2026-07-09 23:15:31,082 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第90页，获取 60 本书，累计 5369 本
+2026-07-09 23:15:34,203 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第91页，获取 60 本书，累计 5429 本
+2026-07-09 23:15:37,373 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第92页，获取 60 本书，累计 5489 本
+2026-07-09 23:15:40,243 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第93页，获取 60 本书，累计 5549 本
+2026-07-09 23:15:42,150 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第94页，获取 60 本书，累计 5609 本
+2026-07-09 23:15:44,334 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第95页，获取 60 本书，累计 5669 本
+2026-07-09 23:15:47,093 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第96页，获取 60 本书，累计 5729 本
+2026-07-09 23:15:50,019 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第97页，获取 60 本书，累计 5789 本
+2026-07-09 23:15:53,467 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第98页，获取 60 本书，累计 5849 本
+2026-07-09 23:15:56,169 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第99页，获取 60 本书，累计 5909 本
+2026-07-09 23:15:59,079 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 第100页，获取 60 本书，累计 5969 本
+2026-07-09 23:16:01,078 - spiders.dangdang_spider - INFO - 分类 '经济管理类' 爬取完成，共获取 5969 本书
+2026-07-09 23:16:01,388 - __main__ - INFO - [经济管理类] 写入数据库 5790 条新记录
+2026-07-09 23:16:01,393 - __main__ - INFO - 数据库当前总记录数: 53004
+2026-07-09 23:16:03,631 - spiders.dangdang_spider - INFO - 正在处理分类 [14/688]: 工学类
+2026-07-09 23:16:04,352 - spiders.dangdang_spider - INFO - 分类 '工学类' 第1页，获取 57 本书，累计 57 本
+2026-07-09 23:16:07,509 - spiders.dangdang_spider - INFO - 分类 '工学类' 第2页，获取 59 本书，累计 116 本
+2026-07-09 23:16:10,603 - spiders.dangdang_spider - INFO - 分类 '工学类' 第3页，获取 60 本书，累计 176 本
+2026-07-09 23:16:12,867 - spiders.dangdang_spider - INFO - 分类 '工学类' 第4页，获取 59 本书，累计 235 本
+2026-07-09 23:16:17,150 - spiders.dangdang_spider - INFO - 分类 '工学类' 第5页，获取 60 本书，累计 295 本
+2026-07-09 23:16:19,358 - spiders.dangdang_spider - INFO - 分类 '工学类' 第6页，获取 60 本书，累计 355 本
+2026-07-09 23:16:21,124 - spiders.dangdang_spider - INFO - 分类 '工学类' 第7页，获取 60 本书，累计 415 本
+2026-07-09 23:16:22,755 - spiders.dangdang_spider - INFO - 分类 '工学类' 第8页，获取 60 本书，累计 475 本
+2026-07-09 23:16:25,775 - spiders.dangdang_spider - INFO - 分类 '工学类' 第9页，获取 60 本书，累计 535 本
+2026-07-09 23:16:29,160 - spiders.dangdang_spider - INFO - 分类 '工学类' 第10页，获取 60 本书，累计 595 本
+2026-07-09 23:16:31,326 - spiders.dangdang_spider - INFO - 分类 '工学类' 第11页，获取 60 本书，累计 655 本
+2026-07-09 23:16:34,363 - spiders.dangdang_spider - INFO - 分类 '工学类' 第12页，获取 60 本书，累计 715 本
+2026-07-09 23:16:36,655 - spiders.dangdang_spider - INFO - 分类 '工学类' 第13页，获取 60 本书，累计 775 本
+2026-07-09 23:16:39,860 - spiders.dangdang_spider - INFO - 分类 '工学类' 第14页，获取 59 本书，累计 834 本
+2026-07-09 23:16:42,073 - spiders.dangdang_spider - INFO - 分类 '工学类' 第15页，获取 59 本书，累计 893 本
+2026-07-09 23:16:45,328 - spiders.dangdang_spider - INFO - 分类 '工学类' 第16页，获取 60 本书，累计 953 本
+2026-07-09 23:16:47,487 - spiders.dangdang_spider - INFO - 分类 '工学类' 第17页，获取 60 本书，累计 1013 本
+2026-07-09 23:16:50,242 - spiders.dangdang_spider - INFO - 分类 '工学类' 第18页，获取 60 本书，累计 1073 本
+2026-07-09 23:16:53,208 - spiders.dangdang_spider - INFO - 分类 '工学类' 第19页，获取 60 本书，累计 1133 本
+2026-07-09 23:16:55,723 - spiders.dangdang_spider - INFO - 分类 '工学类' 第20页，获取 60 本书，累计 1193 本
+2026-07-09 23:16:59,164 - spiders.dangdang_spider - INFO - 分类 '工学类' 第21页，获取 59 本书，累计 1252 本
+2026-07-09 23:17:02,574 - spiders.dangdang_spider - INFO - 分类 '工学类' 第22页，获取 59 本书，累计 1311 本
+2026-07-09 23:17:04,307 - spiders.dangdang_spider - INFO - 分类 '工学类' 第23页，获取 59 本书，累计 1370 本
+2026-07-09 23:17:06,835 - spiders.dangdang_spider - INFO - 分类 '工学类' 第24页，获取 59 本书，累计 1429 本
+2026-07-09 23:17:10,346 - spiders.dangdang_spider - INFO - 分类 '工学类' 第25页，获取 59 本书，累计 1488 本
+2026-07-09 23:17:13,919 - spiders.dangdang_spider - INFO - 分类 '工学类' 第26页，获取 60 本书，累计 1548 本
+2026-07-09 23:17:15,866 - spiders.dangdang_spider - INFO - 分类 '工学类' 第27页，获取 59 本书，累计 1607 本
+2026-07-09 23:17:18,221 - spiders.dangdang_spider - INFO - 分类 '工学类' 第28页，获取 59 本书，累计 1666 本
+2026-07-09 23:17:20,332 - spiders.dangdang_spider - INFO - 分类 '工学类' 第29页，获取 60 本书，累计 1726 本
+2026-07-09 23:17:22,186 - spiders.dangdang_spider - INFO - 分类 '工学类' 第30页，获取 59 本书，累计 1785 本
+2026-07-09 23:17:24,468 - spiders.dangdang_spider - INFO - 分类 '工学类' 第31页，获取 60 本书，累计 1845 本
+2026-07-09 23:17:26,901 - spiders.dangdang_spider - INFO - 分类 '工学类' 第32页，获取 60 本书，累计 1905 本
+2026-07-09 23:17:28,782 - spiders.dangdang_spider - INFO - 分类 '工学类' 第33页，获取 60 本书，累计 1965 本
+2026-07-09 23:17:31,473 - spiders.dangdang_spider - INFO - 分类 '工学类' 第34页，获取 60 本书，累计 2025 本
+2026-07-09 23:17:33,883 - spiders.dangdang_spider - INFO - 分类 '工学类' 第35页，获取 59 本书，累计 2084 本
+2026-07-09 23:17:36,298 - spiders.dangdang_spider - INFO - 分类 '工学类' 第36页，获取 60 本书，累计 2144 本
+2026-07-09 23:17:39,804 - spiders.dangdang_spider - INFO - 分类 '工学类' 第37页，获取 60 本书，累计 2204 本
+2026-07-09 23:17:42,610 - spiders.dangdang_spider - INFO - 分类 '工学类' 第38页，获取 60 本书，累计 2264 本
+2026-07-09 23:17:45,942 - spiders.dangdang_spider - INFO - 分类 '工学类' 第39页，获取 60 本书，累计 2324 本
+2026-07-09 23:17:47,853 - spiders.dangdang_spider - INFO - 分类 '工学类' 第40页，获取 59 本书，累计 2383 本
+2026-07-09 23:17:50,527 - spiders.dangdang_spider - INFO - 分类 '工学类' 第41页，获取 60 本书，累计 2443 本
+2026-07-09 23:17:53,489 - spiders.dangdang_spider - INFO - 分类 '工学类' 第42页，获取 58 本书，累计 2501 本
+2026-07-09 23:17:55,992 - spiders.dangdang_spider - INFO - 分类 '工学类' 第43页，获取 60 本书，累计 2561 本
+2026-07-09 23:17:59,264 - spiders.dangdang_spider - INFO - 分类 '工学类' 第44页，获取 60 本书，累计 2621 本
+2026-07-09 23:18:03,328 - spiders.dangdang_spider - INFO - 分类 '工学类' 第45页，获取 60 本书，累计 2681 本
+2026-07-09 23:18:06,030 - spiders.dangdang_spider - INFO - 分类 '工学类' 第46页，获取 60 本书，累计 2741 本
+2026-07-09 23:18:08,739 - spiders.dangdang_spider - INFO - 分类 '工学类' 第47页，获取 60 本书，累计 2801 本
+2026-07-09 23:18:10,753 - spiders.dangdang_spider - INFO - 分类 '工学类' 第48页，获取 60 本书，累计 2861 本
+2026-07-09 23:18:13,382 - spiders.dangdang_spider - INFO - 分类 '工学类' 第49页，获取 59 本书，累计 2920 本
+2026-07-09 23:18:17,073 - spiders.dangdang_spider - INFO - 分类 '工学类' 第50页，获取 60 本书，累计 2980 本
+2026-07-09 23:18:20,470 - spiders.dangdang_spider - INFO - 分类 '工学类' 第51页，获取 60 本书，累计 3040 本
+2026-07-09 23:18:24,601 - spiders.dangdang_spider - INFO - 分类 '工学类' 第52页，获取 60 本书，累计 3100 本
+2026-07-09 23:18:27,586 - spiders.dangdang_spider - INFO - 分类 '工学类' 第53页，获取 60 本书，累计 3160 本
+2026-07-09 23:18:30,520 - spiders.dangdang_spider - INFO - 分类 '工学类' 第54页，获取 60 本书，累计 3220 本
+2026-07-09 23:18:33,159 - spiders.dangdang_spider - INFO - 分类 '工学类' 第55页，获取 58 本书，累计 3278 本
+2026-07-09 23:18:36,483 - spiders.dangdang_spider - INFO - 分类 '工学类' 第56页，获取 60 本书，累计 3338 本
+2026-07-09 23:18:38,214 - spiders.dangdang_spider - INFO - 分类 '工学类' 第57页，获取 60 本书，累计 3398 本
+2026-07-09 23:18:40,235 - spiders.dangdang_spider - INFO - 分类 '工学类' 第58页，获取 60 本书，累计 3458 本
+2026-07-09 23:18:42,301 - spiders.dangdang_spider - INFO - 分类 '工学类' 第59页，获取 60 本书，累计 3518 本
+2026-07-09 23:18:44,752 - spiders.dangdang_spider - INFO - 分类 '工学类' 第60页，获取 60 本书，累计 3578 本
+2026-07-09 23:18:47,035 - spiders.dangdang_spider - INFO - 分类 '工学类' 第61页，获取 60 本书，累计 3638 本
+2026-07-09 23:18:49,519 - spiders.dangdang_spider - INFO - 分类 '工学类' 第62页，获取 60 本书，累计 3698 本
+2026-07-09 23:18:51,806 - spiders.dangdang_spider - INFO - 分类 '工学类' 第63页，获取 60 本书，累计 3758 本
+2026-07-09 23:18:55,473 - spiders.dangdang_spider - INFO - 分类 '工学类' 第64页，获取 60 本书，累计 3818 本
+2026-07-09 23:18:57,115 - spiders.dangdang_spider - INFO - 分类 '工学类' 第65页，获取 60 本书，累计 3878 本
+2026-07-09 23:18:59,040 - spiders.dangdang_spider - INFO - 分类 '工学类' 第66页，获取 60 本书，累计 3938 本
+2026-07-09 23:19:00,792 - spiders.dangdang_spider - INFO - 分类 '工学类' 第67页，获取 60 本书，累计 3998 本
+2026-07-09 23:19:02,650 - spiders.dangdang_spider - INFO - 分类 '工学类' 第68页，获取 60 本书，累计 4058 本
+2026-07-09 23:19:05,630 - spiders.dangdang_spider - INFO - 分类 '工学类' 第69页，获取 60 本书，累计 4118 本
+2026-07-09 23:19:07,595 - spiders.dangdang_spider - INFO - 分类 '工学类' 第70页，获取 60 本书，累计 4178 本
+2026-07-09 23:19:11,196 - spiders.dangdang_spider - INFO - 分类 '工学类' 第71页，获取 60 本书，累计 4238 本
+2026-07-09 23:19:13,789 - spiders.dangdang_spider - INFO - 分类 '工学类' 第72页，获取 60 本书，累计 4298 本
+2026-07-09 23:19:15,856 - spiders.dangdang_spider - INFO - 分类 '工学类' 第73页，获取 60 本书，累计 4358 本
+2026-07-09 23:19:19,538 - spiders.dangdang_spider - INFO - 分类 '工学类' 第74页，获取 60 本书，累计 4418 本
+2026-07-09 23:19:21,148 - spiders.dangdang_spider - INFO - 分类 '工学类' 第75页，获取 60 本书，累计 4478 本
+2026-07-09 23:19:23,510 - spiders.dangdang_spider - INFO - 分类 '工学类' 第76页，获取 59 本书，累计 4537 本
+2026-07-09 23:19:26,643 - spiders.dangdang_spider - INFO - 分类 '工学类' 第77页，获取 60 本书，累计 4597 本
+2026-07-09 23:19:28,961 - spiders.dangdang_spider - INFO - 分类 '工学类' 第78页，获取 60 本书，累计 4657 本
+2026-07-09 23:19:31,620 - spiders.dangdang_spider - INFO - 分类 '工学类' 第79页，获取 60 本书，累计 4717 本
+2026-07-09 23:19:34,215 - spiders.dangdang_spider - INFO - 分类 '工学类' 第80页，获取 60 本书，累计 4777 本
+2026-07-09 23:19:37,436 - spiders.dangdang_spider - INFO - 分类 '工学类' 第81页，获取 60 本书，累计 4837 本
+2026-07-09 23:19:40,678 - spiders.dangdang_spider - INFO - 分类 '工学类' 第82页，获取 60 本书，累计 4897 本
+2026-07-09 23:19:42,578 - spiders.dangdang_spider - INFO - 分类 '工学类' 第83页，获取 60 本书，累计 4957 本
+2026-07-09 23:19:45,560 - spiders.dangdang_spider - INFO - 分类 '工学类' 第84页，获取 60 本书，累计 5017 本
+2026-07-09 23:19:48,285 - spiders.dangdang_spider - INFO - 分类 '工学类' 第85页，获取 60 本书，累计 5077 本
+2026-07-09 23:19:51,580 - spiders.dangdang_spider - INFO - 分类 '工学类' 第86页，获取 60 本书，累计 5137 本
+2026-07-09 23:19:53,545 - spiders.dangdang_spider - INFO - 分类 '工学类' 第87页，获取 60 本书，累计 5197 本
+2026-07-09 23:19:55,509 - spiders.dangdang_spider - INFO - 分类 '工学类' 第88页，获取 60 本书，累计 5257 本
+2026-07-09 23:19:58,717 - spiders.dangdang_spider - INFO - 分类 '工学类' 第89页，获取 60 本书，累计 5317 本
+2026-07-09 23:20:01,891 - spiders.dangdang_spider - INFO - 分类 '工学类' 第90页，获取 60 本书，累计 5377 本
+2026-07-09 23:20:04,042 - spiders.dangdang_spider - INFO - 分类 '工学类' 第91页，获取 60 本书，累计 5437 本
+2026-07-09 23:20:05,868 - spiders.dangdang_spider - INFO - 分类 '工学类' 第92页，获取 60 本书，累计 5497 本
+2026-07-09 23:20:07,871 - spiders.dangdang_spider - INFO - 分类 '工学类' 第93页，获取 60 本书，累计 5557 本
+2026-07-09 23:20:10,088 - spiders.dangdang_spider - INFO - 分类 '工学类' 第94页，获取 60 本书，累计 5617 本
+2026-07-09 23:20:12,644 - spiders.dangdang_spider - INFO - 分类 '工学类' 第95页，获取 60 本书，累计 5677 本
+2026-07-09 23:20:14,409 - spiders.dangdang_spider - INFO - 分类 '工学类' 第96页，获取 60 本书，累计 5737 本
+2026-07-09 23:20:17,847 - spiders.dangdang_spider - INFO - 分类 '工学类' 第97页，获取 60 本书，累计 5797 本
+2026-07-09 23:20:20,997 - spiders.dangdang_spider - INFO - 分类 '工学类' 第98页，获取 60 本书，累计 5857 本
+2026-07-09 23:20:23,948 - spiders.dangdang_spider - INFO - 分类 '工学类' 第99页，获取 60 本书，累计 5917 本
+2026-07-09 23:20:27,002 - spiders.dangdang_spider - INFO - 分类 '工学类' 第100页，获取 60 本书，累计 5977 本
+2026-07-09 23:20:28,516 - spiders.dangdang_spider - INFO - 分类 '工学类' 爬取完成，共获取 5977 本书
+2026-07-09 23:20:28,772 - __main__ - INFO - [工学类] 写入数据库 5781 条新记录
+2026-07-09 23:20:28,774 - __main__ - INFO - 数据库当前总记录数: 58785
+2026-07-09 23:20:31,232 - spiders.dangdang_spider - INFO - 正在处理分类 [15/688]: 文法类
+2026-07-09 23:20:31,968 - spiders.dangdang_spider - INFO - 分类 '文法类' 第1页，获取 57 本书，累计 57 本
+2026-07-09 23:20:35,255 - spiders.dangdang_spider - INFO - 分类 '文法类' 第2页，获取 57 本书，累计 114 本
+2026-07-09 23:20:37,767 - spiders.dangdang_spider - INFO - 分类 '文法类' 第3页，获取 54 本书，累计 168 本
+2026-07-09 23:20:39,327 - spiders.dangdang_spider - INFO - 分类 '文法类' 第4页，获取 56 本书，累计 224 本
+2026-07-09 23:20:42,132 - spiders.dangdang_spider - INFO - 分类 '文法类' 第5页，获取 55 本书，累计 279 本
+2026-07-09 23:20:43,726 - spiders.dangdang_spider - INFO - 分类 '文法类' 第6页，获取 59 本书，累计 338 本
+2026-07-09 23:20:46,012 - spiders.dangdang_spider - INFO - 分类 '文法类' 第7页，获取 59 本书，累计 397 本
+2026-07-09 23:20:49,525 - spiders.dangdang_spider - INFO - 分类 '文法类' 第8页，获取 58 本书，累计 455 本
+2026-07-09 23:20:52,429 - spiders.dangdang_spider - INFO - 分类 '文法类' 第9页，获取 58 本书，累计 513 本
+2026-07-09 23:20:55,899 - spiders.dangdang_spider - INFO - 分类 '文法类' 第10页，获取 60 本书，累计 573 本
+2026-07-09 23:20:58,647 - spiders.dangdang_spider - INFO - 分类 '文法类' 第11页，获取 59 本书，累计 632 本
+2026-07-09 23:21:01,354 - spiders.dangdang_spider - INFO - 分类 '文法类' 第12页，获取 59 本书，累计 691 本
+2026-07-09 23:21:04,655 - spiders.dangdang_spider - INFO - 分类 '文法类' 第13页，获取 58 本书，累计 749 本
+2026-07-09 23:21:07,901 - spiders.dangdang_spider - INFO - 分类 '文法类' 第14页，获取 60 本书，累计 809 本
+2026-07-09 23:21:09,943 - spiders.dangdang_spider - INFO - 分类 '文法类' 第15页，获取 59 本书，累计 868 本
+2026-07-09 23:21:12,996 - spiders.dangdang_spider - INFO - 分类 '文法类' 第16页，获取 59 本书，累计 927 本
+2026-07-09 23:21:16,320 - spiders.dangdang_spider - INFO - 分类 '文法类' 第17页，获取 57 本书，累计 984 本
+2026-07-09 23:21:18,990 - spiders.dangdang_spider - INFO - 分类 '文法类' 第18页，获取 57 本书，累计 1041 本
+2026-07-09 23:21:23,035 - spiders.dangdang_spider - INFO - 分类 '文法类' 第19页，获取 55 本书，累计 1096 本
+2026-07-09 23:21:26,649 - spiders.dangdang_spider - INFO - 分类 '文法类' 第20页，获取 50 本书，累计 1146 本
+2026-07-09 23:21:29,995 - spiders.dangdang_spider - INFO - 分类 '文法类' 第21页，获取 53 本书，累计 1199 本
+2026-07-09 23:21:32,703 - spiders.dangdang_spider - INFO - 分类 '文法类' 第22页，获取 53 本书，累计 1252 本
+2026-07-09 23:21:35,118 - spiders.dangdang_spider - INFO - 分类 '文法类' 第23页，获取 59 本书，累计 1311 本
+2026-07-09 23:21:38,301 - spiders.dangdang_spider - INFO - 分类 '文法类' 第24页，获取 58 本书，累计 1369 本
+2026-07-09 23:21:41,848 - spiders.dangdang_spider - INFO - 分类 '文法类' 第25页，获取 58 本书，累计 1427 本
+2026-07-09 23:21:46,312 - spiders.dangdang_spider - INFO - 分类 '文法类' 第26页，获取 58 本书，累计 1485 本
+2026-07-09 23:21:49,736 - spiders.dangdang_spider - INFO - 分类 '文法类' 第27页，获取 60 本书，累计 1545 本
+2026-07-09 23:21:54,071 - spiders.dangdang_spider - INFO - 分类 '文法类' 第28页，获取 59 本书，累计 1604 本
+2026-07-09 23:21:56,995 - spiders.dangdang_spider - INFO - 分类 '文法类' 第29页，获取 58 本书，累计 1662 本
+2026-07-09 23:21:59,664 - spiders.dangdang_spider - INFO - 分类 '文法类' 第30页，获取 59 本书，累计 1721 本
+2026-07-09 23:22:02,043 - spiders.dangdang_spider - INFO - 分类 '文法类' 第31页，获取 59 本书，累计 1780 本
+2026-07-09 23:22:04,160 - spiders.dangdang_spider - INFO - 分类 '文法类' 第32页，获取 55 本书，累计 1835 本
+2026-07-09 23:22:06,868 - spiders.dangdang_spider - INFO - 分类 '文法类' 第33页，获取 60 本书，累计 1895 本
+2026-07-09 23:22:08,386 - spiders.dangdang_spider - INFO - 分类 '文法类' 第34页，获取 59 本书，累计 1954 本
+2026-07-09 23:22:11,309 - spiders.dangdang_spider - INFO - 分类 '文法类' 第35页，获取 60 本书，累计 2014 本
+2026-07-09 23:22:13,402 - spiders.dangdang_spider - INFO - 分类 '文法类' 第36页，获取 60 本书，累计 2074 本
+2026-07-09 23:22:17,110 - spiders.dangdang_spider - INFO - 分类 '文法类' 第37页，获取 60 本书，累计 2134 本
+2026-07-09 23:22:20,510 - spiders.dangdang_spider - INFO - 分类 '文法类' 第38页，获取 55 本书，累计 2189 本
+2026-07-09 23:22:23,098 - spiders.dangdang_spider - INFO - 分类 '文法类' 第39页，获取 60 本书，累计 2249 本
+2026-07-09 23:22:25,108 - spiders.dangdang_spider - INFO - 分类 '文法类' 第40页，获取 59 本书，累计 2308 本
+2026-07-09 23:22:26,698 - spiders.dangdang_spider - INFO - 分类 '文法类' 第41页，获取 59 本书，累计 2367 本
+2026-07-09 23:22:29,383 - spiders.dangdang_spider - INFO - 分类 '文法类' 第42页，获取 60 本书，累计 2427 本
+2026-07-09 23:22:32,039 - spiders.dangdang_spider - INFO - 分类 '文法类' 第43页，获取 60 本书，累计 2487 本
+2026-07-09 23:22:34,484 - spiders.dangdang_spider - INFO - 分类 '文法类' 第44页，获取 60 本书，累计 2547 本
+2026-07-09 23:22:37,924 - spiders.dangdang_spider - INFO - 分类 '文法类' 第45页，获取 60 本书，累计 2607 本
+2026-07-09 23:22:40,952 - spiders.dangdang_spider - INFO - 分类 '文法类' 第46页，获取 60 本书，累计 2667 本
+2026-07-09 23:22:43,165 - spiders.dangdang_spider - INFO - 分类 '文法类' 第47页，获取 59 本书，累计 2726 本
+2026-07-09 23:22:45,276 - spiders.dangdang_spider - INFO - 分类 '文法类' 第48页，获取 60 本书，累计 2786 本
+2026-07-09 23:22:46,960 - spiders.dangdang_spider - INFO - 分类 '文法类' 第49页，获取 60 本书，累计 2846 本
+2026-07-09 23:22:50,194 - spiders.dangdang_spider - INFO - 分类 '文法类' 第50页，获取 60 本书，累计 2906 本
+2026-07-09 23:22:52,003 - spiders.dangdang_spider - INFO - 分类 '文法类' 第51页，获取 60 本书，累计 2966 本
+2026-07-09 23:22:55,333 - spiders.dangdang_spider - INFO - 分类 '文法类' 第52页，获取 60 本书，累计 3026 本
+2026-07-09 23:22:58,178 - spiders.dangdang_spider - INFO - 分类 '文法类' 第53页，获取 60 本书，累计 3086 本
+2026-07-09 23:22:59,774 - spiders.dangdang_spider - INFO - 分类 '文法类' 第54页，获取 60 本书，累计 3146 本
+2026-07-09 23:23:02,351 - spiders.dangdang_spider - INFO - 分类 '文法类' 第55页，获取 60 本书，累计 3206 本
+2026-07-09 23:23:04,525 - spiders.dangdang_spider - INFO - 分类 '文法类' 第56页，获取 60 本书，累计 3266 本
+2026-07-09 23:23:06,711 - spiders.dangdang_spider - INFO - 分类 '文法类' 第57页，获取 60 本书，累计 3326 本
+2026-07-09 23:23:08,874 - spiders.dangdang_spider - INFO - 分类 '文法类' 第58页，获取 60 本书，累计 3386 本
+2026-07-09 23:23:13,086 - spiders.dangdang_spider - INFO - 分类 '文法类' 第59页，获取 60 本书，累计 3446 本
+2026-07-09 23:23:14,916 - spiders.dangdang_spider - INFO - 分类 '文法类' 第60页，获取 60 本书，累计 3506 本
+2026-07-09 23:23:17,227 - spiders.dangdang_spider - INFO - 分类 '文法类' 第61页，获取 60 本书，累计 3566 本
+2026-07-09 23:23:19,840 - spiders.dangdang_spider - INFO - 分类 '文法类' 第62页，获取 60 本书，累计 3626 本
+2026-07-09 23:23:21,493 - spiders.dangdang_spider - INFO - 分类 '文法类' 第63页，获取 60 本书，累计 3686 本
+2026-07-09 23:23:22,954 - spiders.dangdang_spider - INFO - 分类 '文法类' 第64页，获取 60 本书，累计 3746 本
+2026-07-09 23:23:25,456 - spiders.dangdang_spider - INFO - 分类 '文法类' 第65页，获取 60 本书，累计 3806 本
+2026-07-09 23:23:27,339 - spiders.dangdang_spider - INFO - 分类 '文法类' 第66页，获取 60 本书，累计 3866 本
+2026-07-09 23:23:30,334 - spiders.dangdang_spider - INFO - 分类 '文法类' 第67页，获取 60 本书，累计 3926 本
+2026-07-09 23:23:33,391 - spiders.dangdang_spider - INFO - 分类 '文法类' 第68页，获取 60 本书，累计 3986 本
+2026-07-09 23:23:35,677 - spiders.dangdang_spider - INFO - 分类 '文法类' 第69页，获取 59 本书，累计 4045 本
+2026-07-09 23:23:37,648 - spiders.dangdang_spider - INFO - 分类 '文法类' 第70页，获取 60 本书，累计 4105 本
+2026-07-09 23:23:40,579 - spiders.dangdang_spider - INFO - 分类 '文法类' 第71页，获取 60 本书，累计 4165 本
+2026-07-09 23:23:42,316 - spiders.dangdang_spider - INFO - 分类 '文法类' 第72页，获取 60 本书，累计 4225 本
+2026-07-09 23:23:44,534 - spiders.dangdang_spider - INFO - 分类 '文法类' 第73页，获取 60 本书，累计 4285 本
+2026-07-09 23:23:46,018 - spiders.dangdang_spider - INFO - 分类 '文法类' 第74页，获取 60 本书，累计 4345 本
+2026-07-09 23:23:49,463 - spiders.dangdang_spider - INFO - 分类 '文法类' 第75页，获取 60 本书，累计 4405 本
+2026-07-09 23:23:52,751 - spiders.dangdang_spider - INFO - 分类 '文法类' 第76页，获取 60 本书，累计 4465 本
+2026-07-09 23:23:55,762 - spiders.dangdang_spider - INFO - 分类 '文法类' 第77页，获取 60 本书，累计 4525 本
+2026-07-09 23:23:59,179 - spiders.dangdang_spider - INFO - 分类 '文法类' 第78页，获取 60 本书，累计 4585 本
+2026-07-09 23:24:02,294 - spiders.dangdang_spider - INFO - 分类 '文法类' 第79页，获取 60 本书，累计 4645 本
+2026-07-09 23:24:05,697 - spiders.dangdang_spider - INFO - 分类 '文法类' 第80页，获取 60 本书，累计 4705 本
+2026-07-09 23:24:08,748 - spiders.dangdang_spider - INFO - 分类 '文法类' 第81页，获取 60 本书，累计 4765 本
+2026-07-09 23:24:11,659 - spiders.dangdang_spider - INFO - 分类 '文法类' 第82页，获取 60 本书，累计 4825 本
+2026-07-09 23:24:14,260 - spiders.dangdang_spider - INFO - 分类 '文法类' 第83页，获取 60 本书，累计 4885 本
+2026-07-09 23:24:17,072 - spiders.dangdang_spider - INFO - 分类 '文法类' 第84页，获取 60 本书，累计 4945 本
+2026-07-09 23:24:20,106 - spiders.dangdang_spider - INFO - 分类 '文法类' 第85页，获取 60 本书，累计 5005 本
+2026-07-09 23:24:22,974 - spiders.dangdang_spider - INFO - 分类 '文法类' 第86页，获取 60 本书，累计 5065 本
+2026-07-09 23:24:26,414 - spiders.dangdang_spider - INFO - 分类 '文法类' 第87页，获取 60 本书，累计 5125 本
+2026-07-09 23:24:29,399 - spiders.dangdang_spider - INFO - 分类 '文法类' 第88页，获取 60 本书，累计 5185 本
+2026-07-09 23:24:31,360 - spiders.dangdang_spider - INFO - 分类 '文法类' 第89页，获取 60 本书，累计 5245 本
+2026-07-09 23:24:34,098 - spiders.dangdang_spider - INFO - 分类 '文法类' 第90页，获取 60 本书，累计 5305 本
+2026-07-09 23:24:36,380 - spiders.dangdang_spider - INFO - 分类 '文法类' 第91页，获取 60 本书，累计 5365 本
+2026-07-09 23:24:39,412 - spiders.dangdang_spider - INFO - 分类 '文法类' 第92页，获取 60 本书，累计 5425 本
+2026-07-09 23:24:41,159 - spiders.dangdang_spider - INFO - 分类 '文法类' 第93页，获取 60 本书，累计 5485 本
+2026-07-09 23:24:44,567 - spiders.dangdang_spider - INFO - 分类 '文法类' 第94页，获取 60 本书，累计 5545 本
+2026-07-09 23:24:46,063 - spiders.dangdang_spider - INFO - 分类 '文法类' 第95页，获取 60 本书，累计 5605 本
+2026-07-09 23:24:48,489 - spiders.dangdang_spider - INFO - 分类 '文法类' 第96页，获取 60 本书，累计 5665 本
+2026-07-09 23:24:51,276 - spiders.dangdang_spider - INFO - 分类 '文法类' 第97页，获取 60 本书，累计 5725 本
+2026-07-09 23:24:54,755 - spiders.dangdang_spider - INFO - 分类 '文法类' 第98页，获取 60 本书，累计 5785 本
+2026-07-09 23:24:57,977 - spiders.dangdang_spider - INFO - 分类 '文法类' 第99页，获取 60 本书，累计 5845 本
+2026-07-09 23:25:00,386 - spiders.dangdang_spider - INFO - 分类 '文法类' 第100页，获取 60 本书，累计 5905 本
+2026-07-09 23:25:03,315 - spiders.dangdang_spider - INFO - 分类 '文法类' 爬取完成，共获取 5905 本书
+2026-07-09 23:25:03,614 - __main__ - INFO - [文法类] 写入数据库 5652 条新记录
+2026-07-09 23:25:03,616 - __main__ - INFO - 数据库当前总记录数: 64437
+2026-07-09 23:25:04,801 - spiders.dangdang_spider - INFO - 正在处理分类 [16/688]: 医学类
+2026-07-09 23:25:05,553 - spiders.dangdang_spider - INFO - 分类 '医学类' 第1页，获取 55 本书，累计 55 本
+2026-07-09 23:25:08,500 - spiders.dangdang_spider - INFO - 分类 '医学类' 第2页，获取 57 本书，累计 112 本
+2026-07-09 23:25:11,841 - spiders.dangdang_spider - INFO - 分类 '医学类' 第3页，获取 59 本书，累计 171 本
+2026-07-09 23:25:14,637 - spiders.dangdang_spider - INFO - 分类 '医学类' 第4页，获取 59 本书，累计 230 本
+2026-07-09 23:25:18,124 - spiders.dangdang_spider - INFO - 分类 '医学类' 第5页，获取 59 本书，累计 289 本
+2026-07-09 23:25:21,550 - spiders.dangdang_spider - INFO - 分类 '医学类' 第6页，获取 59 本书，累计 348 本
+2026-07-09 23:25:24,082 - spiders.dangdang_spider - INFO - 分类 '医学类' 第7页，获取 60 本书，累计 408 本
+2026-07-09 23:25:26,835 - spiders.dangdang_spider - INFO - 分类 '医学类' 第8页，获取 59 本书，累计 467 本
+2026-07-09 23:25:28,888 - spiders.dangdang_spider - INFO - 分类 '医学类' 第9页，获取 60 本书，累计 527 本
+2026-07-09 23:25:31,913 - spiders.dangdang_spider - INFO - 分类 '医学类' 第10页，获取 60 本书，累计 587 本
+2026-07-09 23:25:34,864 - spiders.dangdang_spider - INFO - 分类 '医学类' 第11页，获取 59 本书，累计 646 本
+2026-07-09 23:25:37,956 - spiders.dangdang_spider - INFO - 分类 '医学类' 第12页，获取 59 本书，累计 705 本
+2026-07-09 23:25:40,511 - spiders.dangdang_spider - INFO - 分类 '医学类' 第13页，获取 60 本书，累计 765 本
+2026-07-09 23:25:43,549 - spiders.dangdang_spider - INFO - 分类 '医学类' 第14页，获取 58 本书，累计 823 本
+2026-07-09 23:25:46,975 - spiders.dangdang_spider - INFO - 分类 '医学类' 第15页，获取 60 本书，累计 883 本
+2026-07-09 23:25:49,119 - spiders.dangdang_spider - INFO - 分类 '医学类' 第16页，获取 59 本书，累计 942 本
+2026-07-09 23:25:51,220 - spiders.dangdang_spider - INFO - 分类 '医学类' 第17页，获取 60 本书，累计 1002 本
+2026-07-09 23:25:54,545 - spiders.dangdang_spider - INFO - 分类 '医学类' 第18页，获取 60 本书，累计 1062 本
+2026-07-09 23:25:57,940 - spiders.dangdang_spider - INFO - 分类 '医学类' 第19页，获取 60 本书，累计 1122 本
+2026-07-09 23:26:01,182 - spiders.dangdang_spider - INFO - 分类 '医学类' 第20页，获取 60 本书，累计 1182 本
+2026-07-09 23:26:04,774 - spiders.dangdang_spider - INFO - 分类 '医学类' 第21页，获取 60 本书，累计 1242 本
+2026-07-09 23:26:07,692 - spiders.dangdang_spider - INFO - 分类 '医学类' 第22页，获取 60 本书，累计 1302 本
+2026-07-09 23:26:09,885 - spiders.dangdang_spider - INFO - 分类 '医学类' 第23页，获取 60 本书，累计 1362 本
+2026-07-09 23:26:11,946 - spiders.dangdang_spider - INFO - 分类 '医学类' 第24页，获取 60 本书，累计 1422 本
+2026-07-09 23:26:14,231 - spiders.dangdang_spider - INFO - 分类 '医学类' 第25页，获取 60 本书，累计 1482 本
+2026-07-09 23:26:15,867 - spiders.dangdang_spider - INFO - 分类 '医学类' 第26页，获取 60 本书，累计 1542 本
+2026-07-09 23:26:18,613 - spiders.dangdang_spider - INFO - 分类 '医学类' 第27页，获取 60 本书，累计 1602 本
+2026-07-09 23:26:22,122 - spiders.dangdang_spider - INFO - 分类 '医学类' 第28页，获取 60 本书，累计 1662 本
