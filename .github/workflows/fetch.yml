@@ -3,8 +3,6 @@ name: Fetch Hun2 APK
 # 手动触发：GitHub 网页 Actions 页面点 "Run workflow" 即可
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
 
 permissions:
   contents: write
@@ -13,11 +11,11 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Fetcher (逆向 iefans 接口取签名链接并下载)
-        run: |
-          set -e
-          pip install requests
-          python3 fetch_apk.py
+        run: python3 fetch_apk.py
 
       - name: 校验 APK
         run: |
