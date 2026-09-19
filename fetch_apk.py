@@ -42,35 +42,57 @@ def get(url, timeout=60, extra=None):
 def main():
     # 重试取链（节点会轮换，取到能连的为止）
     apk_url = None
-    for i in range(6):
+    for i in range(8):
         try:
             with get(api_url()) as r:
                 node = json.loads(r.read().decode()).get("url")
             if node:
                 print(f"[取链] 第{i+1}次: {node}")
-                # 立即探活
+                # HEAD 探活，确认节点可达
                 try:
-                    print("[探活] HTTP", get(node, timeout=20).status)
-                    apk_url = node
-                    break
+                    req = urllib.request.Request(node, method="HEAD",
+                                                 headers={"User-Agent": UA, "Referer": REFERER})
+                    resp = urllib.request.urlopen(req, timeout=20)
+                    size = int(resp.headers.get("Content-Length") or 0)
+                    print(f"[探活] HTTP {resp.status}, Content-Length={size}")
+                    if resp.status == 200:
+                        apk_url = node
+                        break
                 except Exception as e:
-                    print("[探活] 失败，重试:", e)
+                    print("[探活] 失败，换节点重试:", e)
         except Exception as e:
             print(f"[取链] 第{i+1}次失败:", e)
     if not apk_url:
         print("取链失败"); sys.exit(1)
 
-    # 下载
-    with get(apk_url, timeout=600) as r, open("hun2.apk", "wb") as f:
-        total = int(r.headers.get("Content-Length") or 0)
-        got = 0
-        while True:
-            b = r.read(1 << 20)
-            if not b:
+    # 下载（带断点重试：链接被截断时用 Range 续传）
+    got = 0
+    loop = 0
+    while loop < 40:
+        loop += 1
+        try:
+            h = {"User-Agent": UA, "Referer": REFERER}
+            if got:
+                h["Range"] = f"bytes={got}-"
+            with get(apk_url, timeout=600, extra=h) as r, open("hun2.apk", "ab" if got else "wb") as f:
+                total = int(r.headers.get("Content-Length") or 0)
+                if got:
+                    total += got
+                while True:
+                    b = r.read(1 << 20)
+                    if not b:
+                        break
+                    f.write(b); got += len(b)
+                    print(f"\r下载 {got}/{total} ({100*got//total if total else 0}%)", end="", flush=True)
+            print()
+            if total and got >= total:
                 break
-            f.write(b); got += len(b)
-            print(f"\r下载 {got}/{total} ({100*got//total if total else 0}%)", end="", flush=True)
-    print()
+            if not total:
+                break
+            print(f"[续传] 已 {got}/{total}，重试 ...")
+        except Exception as e:
+            print(f"\n[下载异常] {e}，已 {got} bytes，重试 ...")
+            import time as _t; _t.sleep(2)
     print("完成, 大小:", got, "bytes")
     if got < 20_000_000:
         print("警告: 文件偏小(预期约 27.8MB), 可能被截断"); sys.exit(2)
