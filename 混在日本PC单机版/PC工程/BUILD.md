@@ -147,6 +147,7 @@ pc/
 │   ├── make_offline_page.py 由原版页面生成 game_main_offline.html
 │   ├── assemble.py          资源装配
 │   ├── serve.py             本地静态服务器（调试用）
+│   ├── deep_play.js         深度玩法闭环验证（25 项断言）
 │   └── headless_test.js     无头浏览器冒烟测试
 ├── .npmrc                   npm / electron 镜像
 ├── package.json
@@ -171,16 +172,50 @@ pc/
 
 ---
 
-## 6. 调试
+## 6. 调试与验证
 
 ```bash
 npm start                       # 带开发者工具
 npm run dev                     # 同上（--dev）
 python3 scripts/serve.py        # 起一个 8100 端口的静态服务，浏览器里调 www/
 node scripts/headless_test.js   # 无头浏览器冒烟测试
+npm test                        # 深度玩法闭环验证（25 项断言）
 ```
 
 查看离线拦截日志：启动时加 `--dev`，主进程会把所有被拦截的外网请求打到控制台。
+
+### 深度验证（`npm test`）
+
+`scripts/deep_play.js` 通过 CDP 驱动无头 Chromium，实际走一遍
+「启动 → 开始游戏 → 进城市 → 推进天数 → 存档」的完整流程，
+而不是只检查文件是否存在。共 25 项断言，覆盖九个维度：
+
+| 维度 | 验证内容 |
+|---|---|
+| 开局加载 | 主菜单场景、车辆 66 条、人物 110 条 |
+| 开局数值 | `SCENE_PLAY`、hp 100、现金 3000、混币 20000 |
+| 进入城市 | `PM_STATE_CITY`、城市名正确（京都） |
+| 城市机制 | 寻路系统、事件管理器、演员管理器可用 |
+| 时间推进 | `pm.passDay()` / `passDayAndSaveGame()` 可调用 |
+| 存档 | 键名正确、结构可解析（`singleGame` / `globalParams`） |
+| 模块裁剪 | 社团 / 排行 / 内购 / 众筹开关均为 `false` |
+| 离线层 | 11 个模块装载、**45 个路由端点**、支付框架在位 |
+| 网络 | 外网请求 0、资源失败 0、运行时异常 0 |
+
+依赖 `ws`；如未安装执行 `npm i -D ws`。需要先起静态服务：
+
+```bash
+python3 scripts/serve.py &
+npm test
+```
+
+> 注意：脚本默认访问 `http://127.0.0.1:8100/game_main_offline.html`，
+> 并用 `HUN_BASE_URL` 环境变量可覆盖。
+
+**排查提示**：游戏的状态 API **不在全局作用域**，而挂在 `mainManager` 上
+（`mainManager.getScene()` / `mainManager.getState()`）。
+另需注意两个易踩的坑：路由表字段是 `Router.table`（小写），
+推进天数的入口是 `playManager.passDay()`。
 
 存档位置（Windows）：
 

@@ -12,13 +12,15 @@
     "patch:check": "python3 scripts/patch_builder.py --check",
     "start": "electron .",
     "dev": "electron . --dev",
+    "test": "node scripts/deep_play.js",
     "build": "electron-builder --win --x64",
     "build:dir": "electron-builder --win --x64 --dir",
     "pack": "electron-builder --dir"
   },
   "devDependencies": {
     "electron": "^33.4.11",
-    "electron-builder": "^24.9.1"
+    "electron-builder": "^24.9.1",
+    "ws": "^8.21.3"
   },
   "build": {
     "appId": "com.hao.hun2.pc",
