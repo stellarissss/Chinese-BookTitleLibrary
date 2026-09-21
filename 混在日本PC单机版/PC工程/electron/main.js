@@ -24,6 +24,67 @@ const PK_NAME = 'com.hao.hun2';
 
 const IS_DEV = process.argv.includes('--dev');
 
+// ============================ 更新包（Overlay）机制 ============================
+// 设计目标：玩家把一个「更新包」解压/运行到游戏目录后，即可无缝升级，
+//           且**完全不影响存档**（存档始终在 userData/saves 下，与代码分离）。
+//
+// 原理：
+//   游戏运行需要的全部代码 = electron/ + www/ + package.json，
+//   打包后被塞进 resources/app.asar。为了让更新包能直接覆盖代码，
+//   这里引入「覆盖层（overlay）目录」：
+//
+//       <exeDir>/resources/app_overlay/          ← 更新包释放到这里
+//            ├── version.json                     ← 更新包版本信息（用于校验/展示）
+//            ├── www/**                           ← 优先使用的游戏资源
+//            └── electron/**                      ← 优先使用的主进程附属文件
+//
+//   启动时若 app_overlay/www/index.html 存在，就用它；否则回退到 asar 内版本。
+//   因此：
+//     · 打更新包 = 把新代码放进 app_overlay/，覆盖旧文件即可；
+//     · 回退     = 直接删除 app_overlay/ 目录，立即回到出厂版本；
+//     · 存档     = 完全不动（在 userData/saves）。
+//
+// 这样即便更新包损坏，删一个目录就能自救，玩家永远有退路。
+function resolveOverlayRoot() {
+    // 打包后：exe 位于 <installDir>/混在日本.exe，资源在 resources/ 下
+    // 开发态：__dirname 即 <project>/electron
+    const candidates = [];
+    try {
+        if (process.resourcesPath) {
+            candidates.push(path.join(process.resourcesPath, 'app_overlay'));
+        }
+    } catch (e) { }
+    // 便携版 / 安装版 的 exe 同级目录（无需管理员权限也能写入）
+    try {
+        candidates.push(path.join(path.dirname(app.getPath('exe')), 'app_overlay'));
+    } catch (e) { }
+    // 用户数据目录（永远可写，兜底方案）
+    try {
+        candidates.push(path.join(app.getPath('userData'), 'app_overlay'));
+    } catch (e) { }
+    // 开发态源码目录
+    candidates.push(path.join(__dirname, '..', 'app_overlay'));
+
+    for (const dir of candidates) {
+        try {
+            if (fs.existsSync(path.join(dir, 'www', 'index.html'))) return dir;
+        } catch (e) { }
+    }
+    return null;
+}
+
+/** 读取更新包版本信息（无更新包时返回 null） */
+function readOverlayVersion() {
+    const root = resolveOverlayRoot();
+    if (!root) return null;
+    try {
+        const f = path.join(root, 'version.json');
+        if (!fs.existsSync(f)) return null;
+        return JSON.parse(fs.readFileSync(f, 'utf8'));
+    } catch (e) { return null; }
+}
+
+
 // ============================ 启动开关（离线强化）============================
 // 说明：Electron/Chromium 自身会做一些后台网络活动（组件更新检查、指标上报、
 // SSL 会话恢复等）。这些流量与游戏无关，但在「完全离线」的验收标准下必须消除。
@@ -45,6 +106,30 @@ app.commandLine.appendSwitch('force-fieldtrials', '');
 const USER_DATA = app.getPath('userData');
 const SAVE_DIR = path.join(USER_DATA, 'saves');
 const SETTINGS_FILE = path.join(USER_DATA, 'settings.json');
+
+// 当前生效的代码根目录（优先更新包覆盖层，否则用内置版本）
+let OVERLAY_ROOT = null;
+let WEB_ROOT = null;      // index.html 所在目录
+let PRELOAD_PATH = null;  // preload.js 路径
+
+/** 解析本次运行实际使用的代码根 */
+function resolveCodeRoots() {
+    OVERLAY_ROOT = resolveOverlayRoot();
+
+    const builtinWeb = path.join(__dirname, '..', 'www');
+    const builtinPreload = path.join(__dirname, 'preload.js');
+
+    if (OVERLAY_ROOT) {
+        // 覆盖层：www 与 electron 各自可能只更新了一部分，逐项回退
+        const ovWeb = path.join(OVERLAY_ROOT, 'www');
+        const ovPreload = path.join(OVERLAY_ROOT, 'electron', 'preload.js');
+        WEB_ROOT = fs.existsSync(path.join(ovWeb, 'index.html')) ? ovWeb : builtinWeb;
+        PRELOAD_PATH = fs.existsSync(ovPreload) ? ovPreload : builtinPreload;
+    } else {
+        WEB_ROOT = builtinWeb;
+        PRELOAD_PATH = builtinPreload;
+    }
+}
 
 let mainWindow = null;
 
@@ -97,7 +182,7 @@ function createWindow() {
         show: false,
         autoHideMenuBar: true,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js'),
+            preload: PRELOAD_PATH || path.join(__dirname, 'preload.js'),
             contextIsolation: true,
             nodeIntegration: false,
             sandbox: false,
@@ -157,7 +242,7 @@ function createWindow() {
     // 禁用拖拽打开文件
     mainWindow.webContents.on('will-navigate', (e) => e.preventDefault());
 
-    mainWindow.loadFile(path.join(__dirname, '..', 'www', 'index.html'));
+    mainWindow.loadFile(path.join(WEB_ROOT || path.join(__dirname, '..', 'www'), 'index.html'));
 
     mainWindow.once('ready-to-show', () => {
         mainWindow.show();
@@ -297,9 +382,19 @@ function setupBridge() {
     });
 
     ipcMain.handle('native:openSaveDir', () => shell.openPath(SAVE_DIR));
-    ipcMain.handle('native:appInfo', () => ({
-        name: APP_NAME, version: APP_VERSION, offline: true, saveDir: SAVE_DIR
-    }));
+    ipcMain.handle('native:appInfo', () => {
+        const ov = readOverlayVersion();
+        return {
+            name: APP_NAME,
+            version: APP_VERSION,
+            offline: true,
+            saveDir: SAVE_DIR,
+            codeRoot: WEB_ROOT,
+            overlay: ov,                    // null = 未安装更新包
+            overlayRoot: OVERLAY_ROOT,
+            overlayVersion: ov ? ov.version : null
+        };
+    });
 
     // ---- jsbridge_android 协议解析 ----
     ipcMain.handle('hun:bridge', async (_e, cmdStr) => {
@@ -397,6 +492,22 @@ if (!gotLock) {
     });
 
     app.whenReady().then(() => {
+        // 先解析「更新包覆盖层」：若存在 app_overlay 则优先加载其中的代码
+        try {
+            resolveCodeRoots();
+            console.log('[代码根]', WEB_ROOT);
+            if (OVERLAY_ROOT) {
+                const ov = readOverlayVersion();
+                console.log('[更新包] 已启用覆盖层:', OVERLAY_ROOT, ov ? ('v' + ov.version) : '');
+            } else {
+                console.log('[更新包] 未安装覆盖层，使用内置版本');
+            }
+        } catch (e) {
+            console.log('[更新包] 覆盖层解析失败，回退内置版本:', e && e.message);
+            OVERLAY_ROOT = null;
+            WEB_ROOT = path.join(__dirname, '..', 'www');
+            PRELOAD_PATH = path.join(__dirname, 'preload.js');
+        }
         fs.mkdirSync(SAVE_DIR, { recursive: true });
         setupBridge();
         createWindow();

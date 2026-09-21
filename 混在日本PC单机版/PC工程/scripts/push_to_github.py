@@ -42,6 +42,10 @@ API = "https://cors.isteed.cc/https://api.github.com"
 EXCLUDE_DIRS = {"node_modules", ".git", "dist", "__pycache__", ".cache"}
 EXCLUDE_FILES = {"package-lock.json", ".DS_Store", "Thumbs.db"}
 
+# 单次建 tree 的条目数上限。GitHub 对过大请求会返回 422
+# "input was too large to process"，实测 150 条/批稳定。
+TREE_BATCH = 150
+
 COMMIT_MSG = """feat: 《混在日本》PC 单机版 —— 完整离线化工程
 
 将 Android 版《混在日本》（日本版，仅主游戏）迁移为 Windows 离线单机版。
@@ -147,11 +151,17 @@ def main():
     base_tree = commit["tree"]["sha"]
     print("      基础 tree %s" % base_tree[:12])
 
-    # ---------- ② 逐文件建 blob ----------
-    print("[2/5] 创建 blob（%d 个）..." % len(files))
-    tree_items = []
-    done = 0
-    for rel, full in files:
+    # ---------- ② 并发建 blob ----------
+    # 说明：逐文件串行建 blob 在 600+ 文件时会超过 15 分钟，因此改为线程池并发。
+    #       GitHub 对创建 blob 的速率限制较宽松，8 并发是实测稳定值。
+    print("[2/5] 创建 blob（%d 个，8 并发）..." % len(files))
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    lock = __import__("threading").Lock()
+    done = [0]
+
+    def make_item(rel_full):
+        rel, full = rel_full
         with open(full, "rb") as f:
             raw = f.read()
         blob = req(
@@ -159,33 +169,47 @@ def main():
             "/repos/%s/%s/git/blobs" % (OWNER, REPO),
             {"content": base64.b64encode(raw).decode("ascii"), "encoding": "base64"},
         )
-        tree_items.append(
-            {
-                "path": "%s/%s" % (args.prefix, rel),
-                "mode": "100755" if os.access(full, os.X_OK) and rel.endswith(".py") else "100644",
-                "type": "blob",
-                "sha": blob["sha"],
-            }
-        )
-        done += 1
-        if done % 50 == 0 or done == len(files):
-            print("      %d / %d" % (done, len(files)))
+        item = {
+            "path": "%s/%s" % (args.prefix, rel),
+            "mode": "100755" if os.access(full, os.X_OK) and rel.endswith(".py") else "100644",
+            "type": "blob",
+            "sha": blob["sha"],
+        }
+        with lock:
+            done[0] += 1
+            if done[0] % 50 == 0 or done[0] == len(files):
+                print("      %d / %d" % (done[0], len(files)))
+        return item
 
-    # ---------- ③ 建 tree ----------
-    print("[3/5] 构建 tree ...")
-    tree = req(
-        "POST",
-        "/repos/%s/%s/git/trees" % (OWNER, REPO),
-        {"base_tree": base_tree, "tree": tree_items},
-    )
-    print("      tree %s（%d 条目）" % (tree["sha"][:12], len(tree["tree"])))
+    tree_items = []
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futs = [pool.submit(make_item, rf) for rf in files]
+        for fu in as_completed(futs):
+            tree_items.append(fu.result())
+
+    # ---------- ③ 建 tree（分批累积）----------
+    # 说明：一次性提交 600+ 条目会让 GitHub 端处理超时（HTTP 422
+    #       "input was too large to process"）。因此改为分批：
+    #       每批 N 条，用上一批产出的 tree 作为下一批的 base_tree 逐次累积。
+    print("[3/5] 构建 tree（分批，每批 %d 条）..." % TREE_BATCH)
+    tree_items.sort(key=lambda x: x["path"])
+    tree_sha = base_tree
+    for i in range(0, len(tree_items), TREE_BATCH):
+        batch = tree_items[i:i + TREE_BATCH]
+        tree = req(
+            "POST",
+            "/repos/%s/%s/git/trees" % (OWNER, REPO),
+            {"base_tree": tree_sha, "tree": batch},
+        )
+        tree_sha = tree["sha"]
+        print("      批次 %d-%d → tree %s" % (i + 1, i + len(batch), tree_sha[:12]))
 
     # ---------- ④ 建 commit ----------
     print("[4/5] 创建 commit ...")
     new_commit = req(
         "POST",
         "/repos/%s/%s/git/commits" % (OWNER, REPO),
-        {"message": COMMIT_MSG, "tree": tree["sha"], "parents": [parent_sha]},
+        {"message": COMMIT_MSG, "tree": tree_sha, "parents": [parent_sha]},
     )
     print("      commit %s" % new_commit["sha"][:12])
 

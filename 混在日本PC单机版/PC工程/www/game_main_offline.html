@@ -460,8 +460,12 @@
 
 		if(openid==null || channel==null || openid=="null" || channel=="null" || openid=="null" || channel=="")
 		{
-			//to do出现下载地址
-			window.location="http://"+RandomNumBoth_HTML(1,9)+".com";
+			//【PC 单机版改造】原版此处会跳转 "http://<随机数>.com"（防刷/下载引导）。
+			//离线版不得访问任何外站，改为就地补全本地默认值，直接进入游戏。
+			//注意：此处只能处理已声明的 openid / channel；epv、mk、app_lg 等
+			//变量在下方才声明，交由各自的默认值逻辑处理。
+			if(openid==null||openid=="null"||openid=="")openid="local_player";
+			if(channel==null||channel=="null"||channel=="")channel="pc";
 		}
 
 
@@ -1584,5 +1588,7 @@ window.__applyLocalPaths = function(){
 <script src="offline/module-cutter.js"></script>
 <!-- ===== 离线版：启动引导 ===== -->
 <script src="offline/start.js"></script>
+<!-- ===== PC 交互层：鼠标拖曳 / 滚轮缩放 / 双击复位 ===== -->
+<script src="offline/pc-ux.js"></script>
 </body>
 </html>

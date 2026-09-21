@@ -8,7 +8,10 @@ const fs = require('fs');
 
 const CHROME = '/usr/bin/chromium';
 const PORT = 9223;
-const URL = process.env.TEST_URL || 'http://localhost:8100/game_main_offline.html';
+// 注意：game_main_offline.html 在 openid/channel 缺省时会跳转外站（原版防刷逻辑），
+// 因此测试必须带上完整参数。
+const URL = process.env.TEST_URL ||
+    'http://localhost:8100/game_main_offline.html?openid=local_player&channel=pc&epv=jp&mk=windows&app_version=4&app_lg=zh';
 const WAIT_MS = parseInt(process.env.WAIT_MS || '25000', 10);
 const OUT = process.argv[2] || '/tmp/headless_report.json';
 
@@ -34,7 +37,6 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
         '--disable-extensions', '--no-first-run', '--disable-background-networking',
         '--no-proxy-server', '--proxy-bypass-list=*',
         '--host-resolver-rules=MAP * 127.0.0.1, EXCLUDE localhost',
-        '--disable-features=NetworkServiceInProcess',
         'about:blank'
     ], { stdio: ['ignore', 'pipe', 'pipe'] });
 

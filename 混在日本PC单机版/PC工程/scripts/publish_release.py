@@ -26,16 +26,16 @@ import urllib.request
 TOKEN = os.environ.get("GH_TOKEN", "").strip()
 OWNER = "stellarissss"
 REPO = "Chinese-BookTitleLibrary"
-TAG = "hun-pc-v4.0.0"
-NAME = "《混在日本》PC 单机版 v4.0.0"
+TAG = "hun-pc-v4.1.0"
+NAME = "《混在日本》PC 单机版 v4.1.0"
 
 API = "https://cors.isteed.cc/https://api.github.com"
 UPLOAD_HOST = "https://cors.isteed.cc/https://uploads.github.com"
 DIST = "/root/.codebuddy/artifact/dist"
 
 ASSETS = [
-    ("混在日本-4.0.0-x64.exe", "安装版（推荐）—— 双击安装，自动创建桌面与开始菜单快捷方式"),
-    ("混在日本-便携版-4.0.0.exe", "便携版 —— 免安装，放到任意目录双击即可运行"),
+    ("混在日本-4.1.0-x64.exe", "安装版（推荐）—— 双击安装，自动创建桌面与开始菜单快捷方式"),
+    ("混在日本-便携版-4.1.0.exe", "便携版 —— 免安装，放到任意目录双击即可运行"),
 ]
 
 BODY = """## 关于
@@ -54,8 +54,8 @@ BODY = """## 关于
 
 | 文件 | 说明 | 大小 |
 |---|---|---|
-| `混在日本-4.0.0-x64.exe` | **安装版（推荐）**。双击安装，自动创建桌面与开始菜单快捷方式 | 107.6 MB |
-| `混在日本-便携版-4.0.0.exe` | **便携版**。免安装，放到任意目录双击即可运行 | 107.4 MB |
+| `混在日本-4.1.0-x64.exe` | **安装版（推荐）**。双击安装，自动创建桌面与开始菜单快捷方式 | 107.6 MB |
+| `混在日本-便携版-4.1.0.exe` | **便携版**。免安装，放到任意目录双击即可运行 | 107.4 MB |
 
 ## 运行环境
 

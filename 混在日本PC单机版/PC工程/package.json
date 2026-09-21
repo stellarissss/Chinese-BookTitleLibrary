@@ -1,6 +1,6 @@
 {
   "name": "hun-japan-pc",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "《混在日本》PC 单机版 —— 完全离线的策略养成游戏",
   "main": "electron/main.js",
   "author": "",
@@ -15,7 +15,10 @@
     "test": "node scripts/deep_play.js",
     "build": "electron-builder --win --x64",
     "build:dir": "electron-builder --win --x64 --dir",
-    "pack": "electron-builder --dir"
+    "pack": "electron-builder --dir",
+    "overlay": "python3 scripts/make_overlay.py",
+    "test:overlay": "bash scripts/verify_overlay.sh",
+    "test:pcux": "node scripts/probe_pcux.js"
   },
   "devDependencies": {
     "electron": "^33.4.11",

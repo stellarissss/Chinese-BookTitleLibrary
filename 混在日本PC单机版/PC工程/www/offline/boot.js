@@ -82,12 +82,57 @@
             try { global.channel = 'pc'; } catch (e) { }
         }
 
+        // ---- 5. 画布分辨率倍率固定为 1（PC 专用修正）----
+        // 原版 getDefault_CanvasScale() 返回 devicePixelRatio。在 HiDPI 屏
+        // （dpr=1.5/2）上会导致：
+        //   · 画布物理尺寸翻倍，显存与填充开销成倍增长；
+        //   · getScreenWidth() 返回物理像素，而鼠标事件的 clientX 是 CSS 像素，
+        //     两者相差 dpr 倍 → 拖曳/点击坐标整体偏移、超速。
+        // PC 端不需要 HiDPI 超采样，固定为 1 可同时解决性能与坐标一致性。
+        applyCanvasScaleFix();
+
         if (ok) {
             applied = true;
             console.log('[离线引导] 资源路径已本地化');
         }
         return applied;
     }
+
+    /**
+     * 把 CANVAS_SCALE 钉死为 1。
+     * hun_min.js 以经典脚本（非模块、非 IIFE）方式加载，其顶层
+     * `var CANVAS_SCALE` 即 window.CANVAS_SCALE，故可从外部覆写。
+     * 同时覆写 getDefault_CanvasScale，保证 initCanvasScale() 重新计算时
+     * 依然返回 1。
+     *
+     * 由于 BaseManager 在 hun_min.js 载入后才存在，本函数自带轮询重试，
+     * 直到覆写成功为止（上限约 20s，足够覆盖资源加载耗时）。
+     */
+    function applyCanvasScaleFix() {
+        try { global.CANVAS_SCALE = 1; } catch (e) { }
+
+        var BM = global.BaseManager;
+        if (BM && BM.prototype && typeof BM.prototype.getDefault_CanvasScale === 'function') {
+            if (BM.prototype.__pcScaleFixed) return true;
+            BM.prototype.getDefault_CanvasScale = function () { return 1; };
+            BM.prototype.__pcScaleFixed = true;
+            console.log('[离线引导] 画布分辨率倍率已固定为 1');
+            return true;
+        }
+        // 未就绪 → 稍后重试
+        if (!global.__pcScaleFixPending) {
+            global.__pcScaleFixPending = true;
+            var n = 0;
+            var t = setInterval(function () {
+                if (applyCanvasScaleFix() || ++n > 800) {   // 800 × 25ms = 20s
+                    clearInterval(t);
+                    global.__pcScaleFixPending = false;
+                }
+            }, 25);
+        }
+        return false;
+    }
+    global.__offlineApplyCanvasScaleFix = applyCanvasScaleFix;
 
     // 立即尝试；未就绪则轮询（页面内联脚本同步执行，通常几十毫秒内完成）
     if (!applyOnce()) {
