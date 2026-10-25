@@ -1,0 +1,18 @@
+# 运行产物
+data/*.sqlite3
+data/*.sqlite3-*
+data/*.csv
+data/review_*.csv
+logs/
+*.log
+
+# 凭据：绝不入库
+.cookies.txt
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
